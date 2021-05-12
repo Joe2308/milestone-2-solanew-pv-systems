@@ -9,3 +9,18 @@
     box-shadow: 5px 10px grey;
     background-color: orange
 }
+
+p {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.calculator {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 1px 1px 3px #000000;
+    margin-top: 100px;
+}
