@@ -3,7 +3,7 @@ document.getElementById("roof_space").addEventListener("change", computeSavings)
 document.getElementById("unit_cost").addEventListener("change", computeSavings);
 document.getElementById("orientation").addEventListener("change", computeSavings);
 
-unction computeSavings() {
+function computeSavings() {
     var irradience = document.getElementById("irradience").value;
     var roof_space = document.getElementById("roof_space").value;
     var unit_cost = document.getElementById("unit_cost").value;
@@ -22,4 +22,13 @@ unction computeSavings() {
     } else {
         document.getElementById("savings").innerHTML = "Your Annual Savings = €" + savings;
     }
+}
+
+document.getElementById("irradience").addEventListener("change", showAnswer);
+document.getElementById("roof_space").addEventListener("change", showAnswer);
+document.getElementById("unit_cost").addEventListener("change", showAnswer);
+document.getElementById("orientation").addEventListener("change", showAnswer);
+
+function showAnswer() {
+    document.getElementById('answer').style.display = 'block';
 }
