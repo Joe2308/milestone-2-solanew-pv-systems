@@ -1,19 +1,34 @@
+
+
 // Solar savings calculator event listeners added to input field values to call computeSavings function//
-document.getElementById("irradience").addEventListener("change", computeSavings);
-document.getElementById("roof_space").addEventListener("change", computeSavings);
-document.getElementById("unit_cost").addEventListener("change", computeSavings);
-document.getElementById("orientation").addEventListener("change", computeSavings);
+document.getElementById("irradience").addEventListener("change", onChange);
+document.getElementById("roof_space").addEventListener("change", onChange);
+document.getElementById("unit_cost").addEventListener("change", onChange);
+document.getElementById("orientation").addEventListener("change", onChange);
 
-// Solar savings calculator function to call when user changes an input field value//
-function computeSavings() {
-
-    // Get input fields//
+function onChange() {
     var irradience = document.getElementById("irradience").value;
     var roof_space = document.getElementById("roof_space").value;
     var unit_cost = document.getElementById("unit_cost").value;
     var orientation = document.getElementById("orientation").value;
 
-    // Math to determine solar radiance based on a solar panel that is 19% effiecient//
+    var savings = computeSavings(irradience, roof_space, unit_cost, orientation);
+    savings = savings.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
+    
+     // Waring message added if customer does not choose a county//
+    if (irradience === "default") {
+        document.getElementById("savings").innerHTML = "Please Choose County!";
+
+        // Message to customer of potential savings made//
+    } else {
+        document.getElementById("savings").innerHTML = "Your Annual Savings = €" + savings;
+    }
+}
+
+// Solar savings calculator function to call when user changes an input field value//
+function computeSavings(irradience, roofSpace, unitCost, orientation) {
+
+   // Math to determine solar radiance based on a solar panel that is 19% effiecient//
     var efficiency = (irradience * .19);
 
     // If user chooses west facing roof we add 2% losses to efficiency of solar panels//
@@ -26,20 +41,11 @@ function computeSavings() {
     }
 
     // The total generation of the system is based it's efficiency times available roof space//
-    var generation = (efficiency * roof_space);
+    var generation = (efficiency * roofSpace);
 
     // Savings made is the total generation times what the customer pays per unit of electricity//
-    var savings = (generation * (unit_cost * .01)).toFixed(2);
-    savings = savings.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
-
-    // Waring message added if customer does not choose a county//
-    if (irradience === "default") {
-        document.getElementById("savings").innerHTML = "Please Choose County!";
-
-        // Message to customer of potential savings made//
-    } else {
-        document.getElementById("savings").innerHTML = "Your Annual Savings = €" + savings;
-    }
+    var savings = (generation * (unitCost * .01)).toFixed(2);
+    return savings;
 }
 
 //solar calculator answers section event listeners added to input fields to call showAnswer function//
