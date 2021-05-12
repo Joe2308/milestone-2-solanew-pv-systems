@@ -11,8 +11,11 @@
 
 <body>
 
+    <!-- Solar Savings Calculator -->
     <h2 class="calculator">Try Our Solar savings Calculator!</h2>
     <section class="form">
+
+        <!-- Select County section figures based on solar radiation for Ireland https://www.met.ie/climate/what-we-measure/sunshine#:~:text=Sunshine%20and%20Solar%20Radiation,hours%20of%20sunshine%20each%20year.&text=During%20these%20months%2C%20sunshine%20duration,a%20day%20in%20early%20summer.-->
         <div class="location-select">
             <h2>Select Your County</h2>
             <select input id="irradience" type="number" min="1" max="100000">
@@ -52,6 +55,7 @@
             </select>
         </div>
 
+        <!-- Select roof orientation section -->
         <div class="orientation-select">
             <h2>Select Your Roof Orientation</h2>
             <select input id="orientation" type="text">
@@ -61,11 +65,15 @@
             </select>
         </div>
 
+
+        <!-- Select available roof space option -->
         <p>Roof Space <input id="roof_space" type="number" min="0" max="1000" value="5" steps=".1"> m2</p>
 
+        <!-- Select current cost per unit of electricity section -->
         <p>Unit Cost <input id="unit_cost" type="number" min="1" max="100" value="1" step="1"> cents</p>
     </section>
 
+    <!-- Answer section -->
     <div id="answer">
         <h2 id="savings"></h2>
     </div>
