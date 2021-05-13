@@ -1,3 +1,7 @@
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
 
 /* Nav bar logo */
 .smaller-image {
@@ -18,9 +22,50 @@ color: #ea5c20;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
-    margin-top: 120px;
+    margin-top: 50px;
 }
 
+.home-learn {
+    margin-top: 15px;
+    border-radius: 25px;
+    background: #ea5c20;
+    color: #fff;
+    border: none;
+}
+
+.home-intro {
+    margin-top: 180px;
+}
+/* Home intro image and text */
+.image-container {
+    height: 500px;
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/home-intro.png);
+}
+
+.intro-text P {
+    margin-top: 55px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #888885;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #312D2A;
+}
+
+ .intro-divider {
+    border-top: 3px solid #ea5c20;
+    width: 50%;
+    border-radius: 15%;
+}
 
 /* Solar calculator styling */
 .form {
