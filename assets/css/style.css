@@ -1,9 +1,25 @@
+
+/* Nav bar logo */
 .smaller-image {
     width: 250px; 
     height: auto;
 }
 
+/* Nav bar links menu */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+color: #ea5c20;
+}
 
+/* Home page hero image */
+.home-hero {
+    background: url(../images/home-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    margin-top: 120px;
+}
 
 
 /* Solar calculator styling */
