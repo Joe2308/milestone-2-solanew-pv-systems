@@ -1,3 +1,10 @@
+.smaller-image {
+    width: 250px; 
+    height: auto;
+}
+
+
+
 
 /* Solar calculator styling */
 .form {
@@ -24,7 +31,7 @@ p {
     font-weight: bold;
     color: orange;
     text-shadow: 1px 1px 3px #000000;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 #answer {

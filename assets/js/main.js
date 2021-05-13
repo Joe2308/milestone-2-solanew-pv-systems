@@ -1,6 +1,6 @@
 
 
-// Solar savings calculator event listeners added to input field values to call computeSavings function//
+// Solar savings calculator event listeners added to input field values to call onChange function//
 document.getElementById("irradience").addEventListener("change", onChange);
 document.getElementById("roof_space").addEventListener("change", onChange);
 document.getElementById("unit_cost").addEventListener("change", onChange);
@@ -8,11 +8,11 @@ document.getElementById("orientation").addEventListener("change", onChange);
 
 function onChange() {
     var irradience = document.getElementById("irradience").value;
-    var roof_space = document.getElementById("roof_space").value;
-    var unit_cost = document.getElementById("unit_cost").value;
+    var roofSpace = document.getElementById("roof_space").value;
+    var unitCost = document.getElementById("unit_cost").value;
     var orientation = document.getElementById("orientation").value;
 
-    var savings = computeSavings(irradience, roof_space, unit_cost, orientation);
+    var savings = computeSavings(irradience, roofSpace, unitCost, orientation);
     savings = savings.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
     
      // Waring message added if customer does not choose a county//
@@ -25,7 +25,7 @@ function onChange() {
     }
 }
 
-// Solar savings calculator function to call when user changes an input field value//
+
 function computeSavings(irradience, roofSpace, unitCost, orientation) {
 
    // Math to determine solar radiance based on a solar panel that is 19% effiecient//
@@ -40,7 +40,7 @@ function computeSavings(irradience, roofSpace, unitCost, orientation) {
         efficiency = (irradience * .15);
     }
 
-    // The total generation of the system is based it's efficiency times available roof space//
+    // The total generation of the system is based on it's efficiency times available roof space//
     var generation = (efficiency * roofSpace);
 
     // Savings made is the total generation times what the customer pays per unit of electricity//
@@ -57,4 +57,12 @@ document.getElementById("orientation").addEventListener("change", showAnswer);
 // ShowAnswer function displays answer when input is selected//
 function showAnswer() {
     document.getElementById('answer').style.display = 'block';
+}
+
+document.getElementById("irradience").addEventListener("change", sortList);
+
+function sortList() {
+    var list = document.getElementById("irradience");
+    sortedList = list.sort();
+    list.innerHTML = sortedList;
 }
