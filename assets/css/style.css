@@ -92,6 +92,12 @@ p {
     text-align: center;
 }
 
+.info-divider {
+    border-top: 3px solid #ea5c20;
+    width: 25%;
+    border-radius: 15%;
+}
+
 .calculator {
     text-align: center;
     font-size: 50px;
