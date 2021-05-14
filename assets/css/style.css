@@ -74,6 +74,14 @@ h2 {
     color: #312D2A;
 }
 
+h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #312D2A;
+}
+
 /* Dividers */
  .intro-divider {
     border-top: 3px solid #ea5c20;
@@ -82,6 +90,12 @@ h2 {
 }
 
 .info-divider {
+    border-top: 3px solid #ea5c20;
+    width: 25%;
+    border-radius: 15%;
+}
+
+.card-divider {
     border-top: 3px solid #ea5c20;
     width: 25%;
     border-radius: 15%;
@@ -101,10 +115,12 @@ h2 {
 }
 
 /* Paragraphs */
-p {
-    font-size: 25px;
-    font-weight: 700;
+.card-text {
+    margin-top: 55px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #888885;
 }
 
 /* Savings calculator */
@@ -139,4 +155,12 @@ p {
 .card {
     border-radius: 12px;
     box-shadow: 10px 5px 5px #a9a9a9;
+}
+
+h3 i {
+    margin: 15px;
+    color: #ea5c20;
+    display: block !important;
+    text-align: center;
+    font-size: 40px;
 }
