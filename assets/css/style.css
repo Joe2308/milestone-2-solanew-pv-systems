@@ -1,3 +1,4 @@
+/* Remove margin and padding all bootstrap containers */
 .container-fluid {
     padding: 0;
     margin: 0;
@@ -25,12 +26,14 @@ color: #ea5c20;
     margin-top: 50px;
 }
 
+/* Home page title */
 .home-title h2 {
     color: #ea5c20;
     font-size: 50px;
     margin-top: 10px;
 }
 
+/* Home page call to action button */
 .home-learn {
     margin-top: 30px;
     border-radius: 25px;
@@ -39,10 +42,12 @@ color: #ea5c20;
     border: none;
 }
 
+/* Home page intro image and text 2 columns */
 .home-intro {
     margin-top: 150px;
 }
-/* Home intro image and text */
+
+/* Home intro image and text image container */
 .image-container {
     height: 500px;
     width: 90%;
@@ -51,6 +56,7 @@ color: #ea5c20;
     background-image: url(../images/home-intro.png);
 }
 
+/* Home intro text section */
 .intro-text P {
     margin-top: 55px;
     text-align: justify;
@@ -59,6 +65,7 @@ color: #ea5c20;
     color: #888885;
 }
 
+/* Headings */
 h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -67,9 +74,16 @@ h2 {
     color: #312D2A;
 }
 
+/* Dividers */
  .intro-divider {
     border-top: 3px solid #ea5c20;
     width: 50%;
+    border-radius: 15%;
+}
+
+.info-divider {
+    border-top: 3px solid #ea5c20;
+    width: 25%;
     border-radius: 15%;
 }
 
@@ -86,18 +100,14 @@ h2 {
     background-color: orange
 }
 
+/* Paragraphs */
 p {
     font-size: 25px;
     font-weight: 700;
     text-align: center;
 }
 
-.info-divider {
-    border-top: 3px solid #ea5c20;
-    width: 25%;
-    border-radius: 15%;
-}
-
+/* Savings calculator */
 .calculator {
     text-align: center;
     font-size: 50px;
@@ -107,6 +117,7 @@ p {
     margin-top: 300px;
 }
 
+/* Savings calculator result box */
 #answer {
     display: none;
     width: 50%;
@@ -118,4 +129,14 @@ p {
     text-align: center;
     box-shadow: 5px 10px grey;
     background-color: orange
+}
+
+/* Home page info boxes */
+.info-box {
+    margin-top: 55px;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 10px 5px 5px #a9a9a9;
 }
