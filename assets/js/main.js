@@ -66,3 +66,5 @@ function sortList() {
     sortedList = list.sort();
     list.innerHTML = sortedList;
 }
+
+// Jquery accordian

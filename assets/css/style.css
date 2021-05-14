@@ -104,26 +104,46 @@ h3 {
     border-radius: 15%;
 }
 
-/* Solar calculator styling */
-.form {
-    width: 50%;
-    height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    border: black 1px solid;
-    text-align: center;
-    box-shadow: 5px 10px grey;
-    background-color: orange
+.savings-divider {
+    border-top: 3px solid #ea5c20;
+    width: 25%;
+    border-radius: 15%;
 }
 
-/* Paragraphs */
+.form hr {
+    border-top: 3px solid #ea5c20;
+    width: 25%;
+    border-radius: 15%;
+}
+
 .card-text {
     margin-top: 55px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #888885;
+}
+
+/* Solar calculator styling */
+.form {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    border: black 1px solid;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 10px 5px 5px #a9a9a9;
+}
+.hero-calculator {
+    background: url(/assets/images/calculator.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    min-height: 500px;
+    margin-top: 50px;
 }
 
 /* Savings calculator */
@@ -133,7 +153,7 @@ h3 {
     font-weight: bold;
     color: orange;
     text-shadow: 1px 1px 3px #000000;
-    margin-top: 300px;
+    margin-top: 55px;
 }
 
 /* Savings calculator result box */
@@ -197,7 +217,7 @@ h3 i {
 
 /* Home intro image and text image container */
 .intro-image-services {
-    height: 500px;
+    height: 400px;
     width: 90%;
     margin-top: 120px;
     background-size: contain;

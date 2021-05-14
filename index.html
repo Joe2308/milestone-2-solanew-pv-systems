@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/c4f1980bcf.js" crossorigin="anonymous"></script>
     <link rel="icon" type="imgage/png" href="assets/images/logo2.png" sizes="512x512">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Solanew PV Systems</title>
 </head>
 
@@ -178,30 +179,30 @@
                     <h2>What We Do</h2>
                     <hr class="intro-divider">
                     <p>
-                        Solar Panels for your home or business are a great investment. The sun causes the panels to
-                        generate DC current which is then converted to AC current by an inverter to be used inside
-                        your
-                        home.
-                        When an appliance calls for power the inverter will let current flow from your solar panels
-                        stopping the import of electricity from your supplier. If the solar panels are not
-                        generating
-                        enough power to run the appliance then the local grid will supply the balance.
-                    </p>
+                        SolaNew PV Systems offer solar panel installations for homes and businesses across Ireland.
+                        It is a fact that solar panels on your roof are a better investment than money sitting in your
+                        bank account. Every kilowatt hour generated is a saving of 20 cents. Many of our domestic
+                        systems generate up to 5000 kilowatt hours per annum! So don't put it off a second longer get in
+                        touch today to see how solar panels can make savings for your home energy bills.
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Solar Savings Calculator -->
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col">
-                <h2 class="calculator">Try Our Solar savings Calculator!</h2>
-                <section id="savings-calculator" class="form">
+    <section id="savings-calculator">
 
-                    <!-- Select County section figures based on solar radiation for Ireland https://www.met.ie/climate/what-we-measure/sunshine#:~:text=Sunshine%20and%20Solar%20Radiation,hours%20of%20sunshine%20each%20year.&text=During%20these%20months%2C%20sunshine%20duration,a%20day%20in%20early%20summer.-->
+        <h2>Try Our Solar savings Calculator!</h2>
+        <hr class="savings-divider">
+
+        <!-- Calculator container -->
+        <div class="container-fluid">
+            <div class="row no-gutters form">
+                <div class="hero-calculator"></div>
+                <div class="col">
                     <div class="location-select">
-                        <h2>Select Your County</h2>
+                        <h3> <i class="fas fa-search-location"></i>Select Your County</h3>
+                        <hr>
                         <select input id="irradience" type="number" min="1" max="100000">
                             <option disable hidden selected value="default">Choose County</option>
                             <option value="1000">Donegal</option>
@@ -238,28 +239,33 @@
                             <option value="1270">Waterford</option>
                         </select>
                     </div>
-
                     <!-- Select roof orientation section -->
                     <div class="orientation-select">
-                        <h2>Select Your Roof Orientation</h2>
+                        <h3> <i class="far fa-compass"></i>Select Your Roof Orientation</h3>
+                        <hr>
                         <select input id="orientation" type="text">
                             <option value="south">South</option>
                             <option value="west">West</option>
                             <option value="east">East</option>
                         </select>
                     </div>
-
-
-
                     <!-- Select available roof space option -->
-                    <p>Roof Space <input id="roof_space" type="number" min="0" max="1000" value="5" steps=".1"> m2</p>
-
+                    <div class="roof-space">
+                        <h3> <i class="fas fa-home"></i>Roof Space m2</h3>
+                        <hr>
+                        <input id="roof_space" type="number" min="0" max="1000" value="5" steps=".1">
+                    </div>
                     <!-- Select current cost per unit of electricity section -->
-                    <p>Unit Cost <input id="unit_cost" type="number" min="1" max="100" value="1" step="1"> cents</p>
-                </section>
+                    <div class="unit-cost">
+                        <h3> <i class="fas fa-euro-sign"></i>Unit Cost Cents</h3>
+                        <hr>
+                        <input id="unit_cost" type="number" min="1" max="100" value="1" step="1">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        </div>
+    </section>
 
     <!-- Answer section -->
     <div class="container">
