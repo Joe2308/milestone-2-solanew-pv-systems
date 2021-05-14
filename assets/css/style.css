@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
 }
-
 /* Nav bar logo */
 .smaller-image {
     width: 250px; 
@@ -154,11 +153,17 @@ h3 {
 /* Home page info boxes */
 .info-box {
     margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
     border-radius: 12px;
     box-shadow: 10px 5px 5px #a9a9a9;
+}
+
+.box-1, .box-2, .box-3 {
+    margin: auto;
 }
 
 h3 i {
