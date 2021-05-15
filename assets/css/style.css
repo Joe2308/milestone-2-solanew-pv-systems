@@ -15,6 +15,11 @@
 color: #ea5c20;
 }
 
+.navbar-light {
+    background-color: #fff;
+    border-bottom: 1px solid #a9a9a9;
+}
+
 /* Home page hero image */
 .home-hero {
     background: url(../images/home-hero.png);
@@ -166,7 +171,7 @@ h3 i,
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 750px;
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -262,20 +267,20 @@ select, input, textarea {
     width: 200px;
     height: 25px;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 5px;
     box-shadow: 10px 5px 5px #a9a9a9;
 }
 
 #answer {
     display: none;
-    width: 50%;
+    width: 200px;
     height: 50%;
     margin: auto;
     border: black 1px solid;
     text-align: center;
     box-shadow: 10px 5px 5px #a9a9a9;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 5px;
 }
 
 /* Contact form */
@@ -312,7 +317,7 @@ select, input, textarea {
 /* -----------------------------------------------Footer -----------------------------------------*/
 
 footer {
-    background-color: #f0eee4;
+    background-color: #fff;
     min-height: 100px;
     margin-top: 55px;
     padding-bottom: 15px;
@@ -328,7 +333,7 @@ footer h3 {
 }
 
 .social-links {
-    padding: 15px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -357,4 +362,92 @@ footer h3 {
 .footer .copyright {
     font-size: 1.3rem;
     text-shadow: .5px .5px #a9a9a9; 
+}
+
+
+/* Media Queries */
+@media(max-width: 768px) {
+    .home-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    }
+    .home-learn {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 414px) {
+    .home-hero {
+    min-height: 230px;
+    }
+    .home-title h2 {
+        font-size: 45px !important;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .card {
+        width: 40rem !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media(max-width:540px) {
+    .card {
+        margin-bottom: 15px !important;
+    }
+}
+
+@media(max-width:280px) {
+    .card {
+      width: fit-content !important;
+    }
+}
+
+@media(max-width:540px) {
+    .intro-image-home {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 55px;
+        background-size: cover;
+    }
+}
+
+@media(max-width:540px) {
+    .split {
+        margin-bottom: 85px;
+        width: 90%;
+    }
+}
+
+@media(max-width:768px) {
+    .services-hero {
+        min-height: 500px;
+        }
+}
+
+@media(max-width:540px) {
+    .services-hero {
+        height: 300px;
+        width: 96%;
+        }
+    .intro-image-services {
+        display: none;
+    }
+    .service-end {
+        margin-top: -25px;
+    }
+    .contact {
+        width: 80%;
+    }
+    .savings-title {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
