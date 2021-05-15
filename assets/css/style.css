@@ -86,6 +86,12 @@ h3 {
 .end-section {
     margin-top: 55px;
 }
+
+.service-end {
+margin-top: -100px;
+margin-bottom: 75px;
+}
+
  .intro-divider {
     border-top: 3px solid #ea5c20;
     width: 50%;
@@ -116,68 +122,10 @@ h3 {
     border-radius: 15%;
 }
 
-.contact-form {
+.contact-divider {
     border-top: 3px solid #ea5c20;
     width: 25%;
     border-radius: 15%;
-}
-
-/* Info cards services */
-.card-text {
-    margin-top: 55px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: #888885;
-}
-
-/* Solar calculator styling */
-.form {
-    width: 50%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 55px;
-    border: black 1px solid;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 10px 5px 5px #a9a9a9;
-}
-.hero-calculator {
-    background: url(/assets/images/calculator.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    min-height: 500px;
-    margin-top: 50px;
-}
-
-.form h3 
-{
-    font-size: 35px;
-}
-
-.location-select, 
-.orientation-select, 
-.roof-space, 
-.unit-cost {
-    margin: 55px;
-}
-
-/* Savings calculator result box */
-.ans-box {
-   margin-bottom: 55px;
-}
-#answer {
-    display: none;
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    border: black 1px solid;
-    text-align: center;
-    box-shadow: 5px 10px grey;
-    background-color: orange
 }
 
 /* Home page info boxes */
@@ -196,7 +144,8 @@ h3 {
     margin: auto;
 }
 
-h3 i {
+h3 i,
+#contact-us i {
     margin: 15px;
     color: #ea5c20;
     display: block !important;
@@ -244,6 +193,84 @@ h3 i {
     color: #888885;
 }
 
+/* Info cards services */
+.card-text {
+    margin-top: 55px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #888885;
+}
+
+/* Solar calculator styling */
+.form {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    text-align: center;
+    box-shadow: 10px 5px 5px #a9a9a9;
+    border-radius: 12px;
+}
+.savings-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/assets/images/calculator.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.form i {
+    margin: 15px;
+    color: #312D2A;
+    display: none !important;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 1px 1px #a9a9a9;
+}
+
+.location-select, 
+.orientation-select, 
+.roof-space, 
+.unit-cost {
+    margin: 25px;
+}
+
+/* Savings calculator result box */
+.ans-box {
+   margin-bottom: 55px;
+}
+
+select, input {
+    width: 200px;
+    height: 25px;
+    background-color: cornsilk;
+    border-radius: 12px;
+    box-shadow: 10px 5px 5px #a9a9a9;
+}
+
+#answer {
+    display: none;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: black 1px solid;
+    text-align: center;
+    box-shadow: 5px 10px grey;
+    background-color: cornsilk;
+}
+
 /* Contact form */
 #contact-form {
     margin-top: 75px;
@@ -268,4 +295,8 @@ h3 i {
     background: #ea5c20;
     color: #fff;
     border: none;
+}
+
+#contact-us {
+    margin-top: 55px;
 }
