@@ -146,14 +146,16 @@ h3 {
     margin-top: 50px;
 }
 
-/* Savings calculator */
-.calculator {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: orange;
-    text-shadow: 1px 1px 3px #000000;
-    margin-top: 55px;
+.form h3 
+{
+    font-size: 35px;
+}
+
+.location-select, 
+.orientation-select, 
+.roof-space, 
+.unit-cost {
+    margin: 55px;
 }
 
 /* Savings calculator result box */
@@ -192,6 +194,7 @@ h3 i {
     display: block !important;
     text-align: center;
     font-size: 40px;
+    text-shadow: 2px 1px 1px #a9a9a9;
 }
 
 /* Services hero image */
