@@ -116,6 +116,13 @@ h3 {
     border-radius: 15%;
 }
 
+.contact-form {
+    border-top: 3px solid #ea5c20;
+    width: 25%;
+    border-radius: 15%;
+}
+
+/* Info cards services */
 .card-text {
     margin-top: 55px;
     text-align: center;
@@ -126,7 +133,7 @@ h3 {
 
 /* Solar calculator styling */
 .form {
-    width: 80%;
+    width: 50%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -159,13 +166,14 @@ h3 {
 }
 
 /* Savings calculator result box */
+.ans-box {
+   margin-bottom: 55px;
+}
 #answer {
     display: none;
     width: 50%;
     height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    margin: auto;
     border: black 1px solid;
     text-align: center;
     box-shadow: 5px 10px grey;
@@ -234,4 +242,30 @@ h3 i {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #888885;
+}
+
+/* Contact form */
+#contact-form {
+    margin-top: 75px;
+}
+
+.bg-contact {
+    margin-top: 55px;
+    background: cornsilk;
+    box-shadow: 10px 5px 5px #a9a9a9;
+}
+
+.center-form {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.contact-btn {
+    margin-top: 30px;
+    border-radius: 25px;
+    background: #ea5c20;
+    color: #fff;
+    border: none;
 }
