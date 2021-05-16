@@ -67,4 +67,11 @@ function sortList() {
     list.innerHTML = sortedList;
 }
 
-// Jquery accordian
+// Jquery
+
+
+
+// funtion to collapse mobile nav on clicking links
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    });
