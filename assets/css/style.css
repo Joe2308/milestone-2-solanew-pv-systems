@@ -156,6 +156,7 @@ margin-bottom: 75px;
 }
 
 h3 i,
+h2 i,
 #contact-us i {
     margin: 15px;
     color: #ea5c20;
@@ -214,6 +215,29 @@ h3 i,
 }
 
 /* Solar calculator styling */
+
+/* Text container for calculator instructions */
+.savings-steps {
+    width: 90%;
+}
+
+/* Text style list items */
+.steps li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #585855;
+    margin: 10px;
+}
+
+.savings-steps h3 {
+    margin-top: 55px;
+}
+
+.savings-steps h3 i {
+display: inline !important;
+font-size: 30px;
+}
+
 .form {
     position: relative;
     z-index: 1;
