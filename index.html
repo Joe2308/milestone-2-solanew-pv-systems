@@ -54,7 +54,7 @@
             </div>
             <div class="row no-gutters">
                 <div class="col home-title">
-                    <h2>SolaNew PV Systems</h2>
+                    <h1>SolaNew PV Systems</h1>
                 </div>
             </div>
             <div class="row text-center no-gutters">
@@ -125,7 +125,7 @@
                             </h3>
                             <hr class="card-divider">
                             <p class="card-text">Our experienced team will design a bespoke PV system customised to both
-                                your energy needs and budget.</p>
+                                your energy needs and budget. Every detail will be taken into account.</p>
                         </div>
                     </div>
                 </div>
@@ -203,9 +203,11 @@
                 </p>
                 <h3><i class="fas fa-clipboard-list"></i> Steps:</h3>
                 <div>
-                    <ul class="steps">
+                    <ol class="steps">
                         <li>
-                            Choose your county. This lets us know the average sunshine per m2 for your location.
+                            Choose your county. This lets us know the average sunshine per metre
+                            squared for your
+                            location.
                         </li>
                         <li>
                             Choose your roof orientation. Solar panels work best on south facing roofs, but also work
@@ -219,7 +221,7 @@
                             Enter what you are currently paying per unit of Electricity in cents. The result value will
                             change based on the information you input.
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -228,12 +230,12 @@
         <div class="container-fluid">
             <div class="row no-gutters form">
                 <div class="savings-bg"></div>
-                <div class="hero-calculator"></div>
                 <div class="col">
-                    <div class="location-select">
-                        <h3>Select Your County</h3>
-                        <i class="fas fa-search-location"></i> <select input id="irradience" type="number" min="1"
-                            max="100000">
+                    <div class="location-select form-group">
+                        <label for="irradience">
+                            Select Your County
+                        </label>
+                        <select input id="irradience" type="number" min="1" max="100000">
                             <option disable hidden selected value="default">Choose County</option>
                             <option value="1000">Donegal</option>
                             <option value="1050">Derry</option>
@@ -270,25 +272,29 @@
                         </select>
                     </div>
                     <!-- Select roof orientation section -->
-                    <div class="orientation-select">
-                        <h3>Roof Orientation</h3>
-                        <i class="far fa-compass"></i> <select input id="orientation" type="text">
+                    <div class="orientation-select form-group">
+                        <label for="orientation">
+                            Roof Orientation
+                        </label>
+                        <select input id="orientation" type="text">
                             <option value="south">South</option>
                             <option value="west">West</option>
                             <option value="east">East</option>
                         </select>
                     </div>
                     <!-- Select available roof space option -->
-                    <div class="roof-space">
-                        <h3>Roof Space m2</h3>
-                        <i class="fas fa-home"></i> <input id="roof_space" type="number" min="0" max="1000" value="5"
-                            steps=".1">
+                    <div class="roof-space form-group">
+                        <label for="roof_space">
+                            Roof Space m2
+                        </label>
+                        <input id="roof_space" type="number" min="0" max="1000" value="5" steps=".1">
                     </div>
                     <!-- Select current cost per unit of electricity section -->
-                    <div class="unit-cost">
-                        <h3>Unit Cost Cents</h3>
-                        <i class="fas fa-euro-sign"></i> <input id="unit_cost" type="number" min="1" max="100" value="1"
-                            step="1">
+                    <div class="unit-cost form-group">
+                        <label for="unit_cost">
+                            Unit Cost Cents
+                        </label>
+                        <input id="unit_cost" type="number" min="1" max="100" value="1" step="1">
                     </div>
                     <!-- Answer div displayed by JS -->
                     <div class="col ans-box">
@@ -298,7 +304,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <hr class="end-section">

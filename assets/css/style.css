@@ -3,9 +3,10 @@
     padding: 0;
     margin: 0;
 }
+
 /* Nav bar logo */
 .smaller-image {
-    width: 150px; 
+    width: 130px; 
     height: auto;
 }
 
@@ -31,10 +32,11 @@ color: #ea5c20;
 }
 
 /* Home page title */
-.home-title h2 {
+.home-title h1 {
     color: #ea5c20;
     font-size: 50px;
     margin-top: 0px;
+    text-align: center;
 }
 
 /* Home page call to action button */
@@ -226,7 +228,7 @@ h2 i,
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #585855;
-    margin: 10px;
+    margin: 15px;
 }
 
 .savings-steps h3 {
@@ -250,6 +252,12 @@ font-size: 30px;
     box-shadow: 10px 5px 5px #a9a9a9;
     border-radius: 5px;
 }
+
+.form label {
+    display: block;
+    font-size: 20px;
+}
+
 .savings-bg {
     position: absolute;
     z-index: -1;
@@ -264,15 +272,6 @@ font-size: 30px;
     width: 100%;
     height: 100%;
     border-radius: 5px;
-}
-
-.form i {
-    margin: 15px;
-    color: #312D2A;
-    display: none !important;
-    text-align: center;
-    font-size: 30px;
-    text-shadow: 2px 1px 1px #a9a9a9;
 }
 
 .location-select, 
