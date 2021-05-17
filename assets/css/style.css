@@ -1,4 +1,4 @@
-/* Remove margin and padding all bootstrap containers */
+/* Remove margin and padding all bootstrap full size containers */
 .container-fluid {
     padding: 0;
     margin: 0;
@@ -91,7 +91,6 @@ h3 {
 }
 
 /* Dividers */
-
 .end-section {
     margin-top: 55px;
 }
@@ -101,7 +100,7 @@ margin-top: -100px;
 margin-bottom: 75px;
 }
 
- .intro-divider {
+.intro-divider {
     border-top: 3px solid #ea5c20;
     width: 50%;
     border-radius: 15%;
@@ -170,6 +169,15 @@ h2 i,
     text-shadow: 2px 1px 1px #a9a9a9;
 }
 
+/* Info cards text*/
+.card-text {
+    margin-top: 55px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #585855;
+}
+
 /* Services hero image */
 .services-hero {
     background: url(../images/services-hero.gif);
@@ -181,15 +189,14 @@ h2 i,
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-
 }
 
+/* Services title */
 .services-title h2 {
     color: #ea5c20;
     font-size: 50px;
     margin-top: 55px;
 }
-
 
 /* Home intro image and text image container */
 .intro-image-services {
@@ -201,6 +208,7 @@ h2 i,
     background-image: url(../images/services-intro.png);
 }
 
+/* Services intro text */
 .services-text P {
     margin-top: 55px;
     text-align: justify;
@@ -209,16 +217,12 @@ h2 i,
     color: #585855;
 }
 
-/* Info cards services */
-.card-text {
-    margin-top: 55px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: #585855;
-}
+/* Savings calculator styling */
 
-/* Solar calculator styling */
+/* Text container for calculator instructions */
+.savings-steps {
+    width: 90%;
+}
 
 .video-link {
     color: #ea5c20;
@@ -227,11 +231,6 @@ h2 i,
 .video-link:hover {
     font-size: 20px;
     color: #ea5c20;
-}
-
-/* Text container for calculator instructions */
-.savings-steps {
-    width: 90%;
 }
 
 /* Text style list items */
@@ -251,6 +250,7 @@ display: inline !important;
 font-size: 30px;
 }
 
+/* Savings calculator input form */
 .form {
     position: relative;
     z-index: 1;
@@ -399,7 +399,9 @@ footer h3 {
 }
 
 
-/* Media Queries */
+/*-------------------------------------------- Media Queries---------------------------------------- */
+
+/* Home section responsive */
 @media(max-width: 768px) {
     .home-hero {
     background-position: center;
@@ -421,6 +423,7 @@ footer h3 {
     }
 }
 
+/* Services info boxes bootstrap cards responsive */
 @media screen and (min-width:600px) and (max-width:768px) {
     .card {
         width: 40rem !important;
@@ -440,6 +443,7 @@ footer h3 {
     }
 }
 
+/* Sections with image and text side by side responsive */
 @media(max-width:540px) {
     .intro-image-home {
         margin-left: auto;
@@ -459,6 +463,7 @@ footer h3 {
     }
 }
 
+/* Services and contact form sections responsive */
 @media(max-width:768px) {
     .services-hero {
         min-height: 500px;
