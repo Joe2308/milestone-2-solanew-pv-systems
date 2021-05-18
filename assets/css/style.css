@@ -13,7 +13,7 @@
 /* Nav bar links menu */
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
-color: #ea5c20;
+    color: #ea5c20;
 }
 
 .navbar-light {
@@ -96,8 +96,8 @@ h3 {
 }
 
 .service-end {
-margin-top: -100px;
-margin-bottom: 75px;
+    margin-top: -100px;
+    margin-bottom: 75px;
 }
 
 .intro-divider {
@@ -246,8 +246,8 @@ h2 i,
 }
 
 .savings-steps h3 i {
-display: inline !important;
-font-size: 30px;
+    display: inline !important;
+    font-size: 30px;
 }
 
 /* Savings calculator input form */
@@ -294,15 +294,21 @@ font-size: 30px;
 
 /* Savings calculator result box */
 .ans-box {
-   margin-bottom: 55px;
+    margin-bottom: 55px;
 }
 
-select, input, textarea {
+select, 
+input, 
+textarea {
     width: 200px;
     height: 25px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 10px 5px 5px #a9a9a9;
+}
+
+#savings {
+    margin: 5px;
 }
 
 #answer {
@@ -404,10 +410,10 @@ footer h3 {
 /* Home section responsive */
 @media(max-width: 768px) {
     .home-hero {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 300px;
     }
     .home-learn {
         font-size: 16px;
@@ -416,7 +422,7 @@ footer h3 {
 
 @media(max-width: 414px) {
     .home-hero {
-    min-height: 230px;
+        min-height: 230px;
     }
     .home-title h2 {
         font-size: 45px !important;
@@ -439,7 +445,13 @@ footer h3 {
 
 @media(max-width:280px) {
     .card {
-      width: fit-content !important;
+        width: fit-content !important;
+    }
+    #answer, 
+    select, 
+    input, 
+    textarea {
+        width: 150px;
     }
 }
 
