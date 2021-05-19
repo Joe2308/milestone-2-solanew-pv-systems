@@ -408,6 +408,12 @@ footer h3 {
 /*-------------------------------------------- Media Queries---------------------------------------- */
 
 /* Home section responsive */
+@media(max-width: 1024px) {
+    .intro-image-home {
+        margin-top: 145px;
+    }
+}
+
 @media(max-width: 768px) {
     .home-hero {
         background-position: center;
@@ -417,6 +423,13 @@ footer h3 {
     }
     .home-learn {
         font-size: 16px;
+    }
+    .intro-image-home {
+        margin-left: auto;
+        margin-right: auto;
+       }
+       .intro-image-services {
+        display: none;
     }
 }
 
@@ -468,7 +481,7 @@ footer h3 {
     }
 }
 
-@media(max-width:540px) {
+@media(max-width:768px) {
     .split {
         margin-bottom: 85px;
         width: 90%;
@@ -500,5 +513,19 @@ footer h3 {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media(max-width:540px) {
+    .services-hero {
+        background: url(/assets/images/services-media.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 450px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%; 
     }
 }
