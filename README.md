@@ -83,3 +83,29 @@ Users will most certainly be interested in how much they can save on their energ
 
 ### How do I initiate an impulse buy/booking?
 Feel good content with CTA flow to lead to completing the contact and follow the company on social media.
+
+## Scope:
+
+### Features for this release:
+1. Solar savings calculator.
+1. Contact form.
+1. Emotive images. 
+1. Rich informative content on the how solar panels work.
+1. Call to action buttons based on information hierarchy.
+1. Social media links.
+
+### User requirements:
+1. The ability to learn about solar energy.
+1. The ability to calculate exactly how much they can save by installing solar energy.
+1. The ability to contact the sales team.
+1. The ability to read rich content.
+1. The ability to follow the company on social media. 
+1. The ability to view images.
+
+### How we will achieve these requirements:
+1. By adding easy to read no jargon text.
+1. By adding an intuitive savings calculator that takes user input.
+1. By implementing a contact form.
+1. Good headings and paragraphs that are informative and enjoyable to read.
+1. Appropriate social links in the footer and also by use of natural internal links in the content.
+1. Each page will have a hero image and also each section on each page will begin with an image.
