@@ -1,6 +1,6 @@
 # Milestone Project 2. Solanew PV Systems
 
-![Our-logo](assets/images/solanewlogo.png)
+![SolaNew Logo][/assets/images/solanewlogo.png]
 
 This project is based on a solar panel installation coming based in Ireland. The name of the website is Solanew PV systems which is a ficticious company I made up. I made this website as I come from an electrical background and I am very interested in solar energy and it's benefits to the environment and the users independence from rising utility costs. 
 The main aim of this website is to ultimately sell the supply and installation of bespoke designed solar photovoltaic systems to home owners across Ireland. I spent some time researching the annual solar radiation figures for all counties in Ireland and I also researched the efficiency of the leading solar panel brands. I turned this data into a very usefull tool for customers to see what annual savings they can make by installing solar energy. The data is based on accurate figures and gives accurate results that could also be used by other solar panel installation companies. I hope to develop this idea more in depth for an onsite app in future. 
