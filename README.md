@@ -109,3 +109,17 @@ Feel good content with CTA flow to lead to completing the contact and follow the
 1. Good headings and paragraphs that are informative and enjoyable to read.
 1. Appropriate social links in the footer and also by use of natural internal links in the content.
 1. Each page will have a hero image and also each section on each page will begin with an image.
+
+## Structure:
+
+### Navigation
+I have implemented a single page site of 4 sectons:
+1. Home
+1. Services
+1. Savings Calculator
+1. Contact Us
+1. The header also contains the band logo which has a return to home link.
+
+I have used a fixed navigation bar to allow users to move to any other section from their current section. I have also used Jquery to add a back to top button and change the color of the navigation on scrolling. 
+This creates a better user experience and avoids excessive scrolling. I have also implemented the use of embedding text links throughout sections of content that relates to other important content internally and externally such as instructional videos and the company's social media platforms.
+The linking stucture keeps my user experience strategy in mind of generating conversions through contact form enquiries and social media followers.
