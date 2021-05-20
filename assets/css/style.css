@@ -41,7 +41,7 @@
     animation-duration: 2s;
 }
 
-/* Home page call to action button */
+/* Home page call to action button  Keyframes from youtube tutorial https://youtu.be/SPtSMjZlyUU*/ 
 .home-learn {
     margin-top: 30px;
     border-radius: 25px;
