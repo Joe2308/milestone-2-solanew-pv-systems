@@ -449,6 +449,10 @@ footer h3 {
     .home-title h2 {
         font-size: 45px !important;
     }
+
+    .intro-image-home {
+        height: 200px !important;
+    }
 }
 
 /* Services info boxes bootstrap cards responsive */
