@@ -123,3 +123,29 @@ I have implemented a single page site of 4 sectons:
 I have used a fixed navigation bar to allow users to move to any other section from their current section. I have also used Jquery to add a back to top button and change the color of the navigation on scrolling. 
 This creates a better user experience and avoids excessive scrolling. I have also implemented the use of embedding text links throughout sections of content that relates to other important content internally and externally such as instructional videos and the company's social media platforms.
 The linking stucture keeps my user experience strategy in mind of generating conversions through contact form enquiries and social media followers.
+
+## Skeleton:
+
+### Presentation
+1. Simple layout.
+1. Hero image for each section.
+1. Fixed navigation.
+1. Consistent layout and theme.
+
+### User conventional tools:
+1. Clear headings. 
+1. Clickable elements clearly labelled. 
+1. Easy to read nav bar. 
+1. Social media links in the form of clickable icons in the footer. 
+
+### Progressive disclosure:
+I have placed the priority content on the home page so the user sees this first.
+I have arranged the supporting content in order of priority in additional sections. 
+Each section links to the most important items to engage users and encourage a conversion.
+
+### Elements that have priority:
+1. Navigation menu with fixed scrolling.
+1. Clickable logo with return to home link.
+1. Solar savings calculator and hero images. 
+1. Social media links.
+1. Contact form.
