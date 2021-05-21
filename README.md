@@ -149,3 +149,27 @@ Each section links to the most important items to engage users and encourage a c
 1. Solar savings calculator and hero images. 
 1. Social media links.
 1. Contact form.
+
+## Surface
+
+### Colors:
+I have gone form a simple theme of a clean white background for the body with orange color h1 heading And call to action buttons. My lower level headings are black with orange icons and dividers. I choose the color orange and white to convery energy from the sun over a clean landscape.
+
+### Fonts:
+- For the headings I have chosen Montserrat in black as it is simple effective and professional.
+- For the main text I have decided to stick with Montserrat but I have used a grey color on my paragraphs. I just liked how this looked and felt I did not need a different font style for the text.
+### Images: 
+Deciding to invest in solar panels can be a daunting experience for home owners. Add to this the fact there are many similar companies offering the best service. To stand out I decided to add some fun to the website by using cartoon style images. They are very welcoming to visitors and still convey exactly what the company is all about. Professional friendly service with outstanding customer support.
+All images have been taken from google images. I made sure to check all images were free to use and share so there would be no copyright infringments. To this I search for google images clicked on settings >> advanced search and made sure the setting for usage rights was enabled.
+
+### Order and sequence:
+1. Navigation order - Home/ Services/ Solar Savings Calculator/ Contact US.
+1. Home section order - Hero image/ Heading/ Call to action/ Intro paragraph and image/ How it works bootstrap cards.
+1. Services section order - Heading/  Call to action/ Hero image/ Paragraph of text and image.
+1. Solar Savings Calculator section - Heading/ Instructional steps/ Calculator on opaque background image.
+1. Contact Us section order - Heading/ Contact form/ Submit button.
+1. Footer section order - Company name/ social links/ copyright.
+
+### Other themes:
+1. Use of relevant font awesome icons to add a professional touch.
+1. Use of subtle shadows to lift some elements off the page.
