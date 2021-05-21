@@ -173,3 +173,32 @@ All images have been taken from google images. I made sure to check all images w
 ### Other themes:
 1. Use of relevant font awesome icons to add a professional touch.
 1. Use of subtle shadows to lift some elements off the page.
+
+# AVAILABLE FEATURES
+
+### Home
+The home page is laid out with a friendly animated hero image. The company name and a call to action slide in from the left and right using keyframes animation. From research the first thing customers want to know about solar panels is how much they can save on energy bills by installing them. The main standout point on the home page for this reason is a call to action button that links to the solar savings calculator. Below the CTA button I have used bootstrap's grid to display two columns on larger devices of an image and a simple explainer paragraph. The first two sentences are displayed and I have use Jquery to target a read more button to show extra text. Below that I have used bootstrap cards to display the professional qualities of the company.
+
+### Services
+The services page contains a call to action button that links to the contact form. By this stage the user should have received enough positive information to encourage them to make contact for design and pricing. On larger devices I have used an explainer gif as the hero image. This shows how energy is generated from daylight negating the need to import from the grid while also storing surplus energy which can then be used at night time and topped up by the grid. This is an engaging image which is certain to not only draw a positive reaction from visitors but also increase session duration which can be of help in search engine rankings. Below this there is also another image with a paragraph of text. I have also used Jquery to target a read more button here to show hidden text.
+
+### Solar Savings Calculator
+The introduction to the savings calculator is instruction steps on how to use it effectively. I have used a Jquery accordian to allow the steps to drop down after clicking on the arrow.
+The calculator itself has been written in vanilla Javascript. It is based on real world data. I researched the annual sunshine hours generated per county in Ireland per square meter. I based calculations on solar panels that are 19% efficient at peak power. When the user selects a county an onChange funciton is triggered that multiplies the irradience value of the selected county by the efficiency of the panel. The user then selects an average area of free roof space and this input value is multiplied by our irradience times efficiency result. The result of this is then multiplied by the cost the user inputs that they currently pay per unit of electricity. The savings result is then display in the inner HTML of a h2 heading. There is also the option to select different roof orientations. If the user does so an if else state also for a lower effieciency to be used to allow for losses. An additional if else statement is used for user error. If the user does not select a county and proceeds to input the other form fields an message is displayed, "Please choose county".
+
+### Contact US 
+At this point the user should be fully satisfied they have been fully informed in a transparent way about the workings of solar panels and how they are certainly a great investment. This is why the contact form has been left quite simple to entice a conversion. Once the user has come this far the sales team will complete the funnel. The emails are being send by email.Js.
+ 
+
+### Footer
+I have added social media links and contact details in the footer. All social media icons are clickable and work in external tabs.
+I also added copyright details in a seperate bootstrap collumn. 
+
+### Features to add for future releases:
+There are some features that I would love to implement on future releases:
+
+1. #### Desing your own system for customers - Allow the user to build there own solar panel system in a step through process using Javascript. The user can select the number of panels the type of frame and controls would then be selected for them based on number of panels. The final step would then give users a price to supply and fit while also giving accurated system genertaion details.
+1. #### Live chat - This would be a great support option to engage with new users and reduce bounce rate and increase session times.
+1. #### Installers support section and downloadable app - Future versions would certainly have the option to support installation experts making them potential customers also. On site survey calculators and orientation tools to make installers lives easier would drive excellent traffic to the site.
+1. #### Ecommerce - There is a great opportunity to add some extras for people who already have solar panels installed. Affordable monitoring solutions and wifi sticks could be added to a store section as well as tools such as wire cutters and survey equipment for installers.
+
