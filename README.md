@@ -202,3 +202,65 @@ There are some features that I would love to implement on future releases:
 1. #### Installers support section and downloadable app - Future versions would certainly have the option to support installation experts making them potential customers also. On site survey calculators and orientation tools to make installers lives easier would drive excellent traffic to the site.
 1. #### Ecommerce - There is a great opportunity to add some extras for people who already have solar panels installed. Affordable monitoring solutions and wifi sticks could be added to a store section as well as tools such as wire cutters and survey equipment for installers.
 
+# TECHNOLOGIES USED
+
+1. [Balsamiq](https://balsamiq.com/wireframes/)
+* I found Balsamiq an extremely usefull platform to design mock ups and get a feel of how my website would look before coding.
+
+2. [HTML 5](https://en.wikipedia.org/wiki/HTML)
+* HTML is the main mark up language used to design my webiste.
+
+3. [CSS 3](https://en.wikipedia.org/wiki/CSS)
+* All HTML elements were styled to my own personal taste using CSS language.
+
+1. [Javascript](https://www.javascript.com/)
+* The solar savings calculator was designed used vanilla Javascript.
+
+1. [Jquery](https://jquery.com/)
+* Jquery was used to show and hide elements on the document.
+
+1. [EmailJS](https://www.emailjs.com/)
+* EmailJS was used to send my contact form.
+
+4. [Bootstrap 4](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+* In order to make my website responsive I used the bootstrap 4 grid system. I also used bootstrap for the responsive image cards.
+
+5. [Font Awesome](https://fontawesome.com/)
+* All icons have been sourced and added from the free version of font awesome.
+
+6. [Google Fonts](https://fonts.google.com/)
+* I used google fonts to source Monserrat to style all of my headings and text.
+
+7. [Gitpod](https://www.gitpod.io/)
+* I used git pod as my IDE workspace to write and run all code. I used Git as my version control to commit and push all code to my GitHub repository.
+
+8. [Github](https://github.com/)
+* I used GitHub to store my Git commits and back up all code.
+
+9. [W3C HTML validator](https://validator.w3.org/)
+* I used the W3C validation service to ensure all HTML code passed validation.
+
+10. [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
+* I used the W3C validation service to ensure all CSS code passed validation.
+
+11. [Photoshop](https://www.adobe.com/ie/products/photoshop.html)
+* I used Adobe photoshop to create the company logo and favicon.
+
+13. [Optimizilla](https://imagecompressor.com/)
+* When testing load speeds in Lighthouse some of my images needed to be optimized. Optimizilla allowed me to compress images up to 80% dramatically improving the website's performance in Lighthouse.
+![Image compression](assets/images/optimizilla.png)
+
+
+14. [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+* Throughout the development process I used chrome developer tools for debugging and also to keep checking any changes I was making looked good on all devices.
+
+15. [WAVE web accessibility tool](https://wave.webaim.org/)
+* I used WAVE to make check any errors that my site may have which would effect users with hearing or visual disabilities.
+
+16. [a11y](https://color.a11y.com/)
+* I used a11y to get my color contrast between background and text as accessible as possible without comprimising my vision for the website design.
+
+17. [CSS Autoprefixer](https://autoprefixer.github.io/)
+* I used Autoprefixer to ensure all of my css styles would work on all browsers.
+
+
