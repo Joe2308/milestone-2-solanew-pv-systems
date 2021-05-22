@@ -211,9 +211,10 @@
                     this great <a class="video-link" href="https://youtu.be/2jhxnXGnvaA" target="_blank"
                         rel="noreferrer">video</a>.
                 </p>
-                <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Steps:</h3>
+                <!-- Arrow icon rotates 180 degrees using css and Jquery -->
+                <h3>Steps: <i id="rotate" class="down fas fa-angle-down"></i></h3>
                 <div>
-                    <ol class="steps">
+                    <ol id="instruct" class="steps">
                         <li>
                             Choose your county. This lets us know the average sunshine per metre
                             squared for your
@@ -409,9 +410,6 @@
 
     <script src="assets/js/main.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>

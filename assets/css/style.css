@@ -250,10 +250,23 @@ h2 i,
     margin-top: 55px;
 }
 
+/* Instruction steps icon */
 .savings-steps h3 i {
-    display: inline !important;
-    font-size: 30px;
+    display: inline-block !important;
+    font-size: 35px;
+    transition: all 0.35s ease-in-out;
 }
+
+.savings-steps h3 i:hover {
+    font-size: 40px;
+    color: #212529;
+    cursor: pointer;
+}
+
+/* Using JQuery to add this class to rotate steps icon when clicked */
+.up {
+    transform: rotate(180deg);
+    }
 
 /* Savings calculator input form */
 .form {

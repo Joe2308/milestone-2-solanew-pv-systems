@@ -1,5 +1,3 @@
-
-
 // Solar savings calculator event listeners added to input field values to call onChange function//
 document.getElementById("irradience").addEventListener("change", onChange);
 document.getElementById("roof_space").addEventListener("change", onChange);
@@ -14,8 +12,8 @@ function onChange() {
 
     var savings = computeSavings(irradience, roofSpace, unitCost, orientation);
     savings = savings.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
-    
-     // Waring message added if customer does not choose a county//
+
+    // Waring message added if customer does not choose a county//
     if (irradience === "default") {
         document.getElementById("savings").innerHTML = "Please Choose County!";
 
@@ -28,7 +26,7 @@ function onChange() {
 
 function computeSavings(irradience, roofSpace, unitCost, orientation) {
 
-   // Math to determine solar radiance based on a solar panel that is 19% effiecient//
+    // Math to determine solar radiance based on a solar panel that is 19% effiecient//
     var efficiency = (irradience * .19);
 
     // If user chooses west facing roof we add 2% losses to efficiency of solar panels//
@@ -67,11 +65,24 @@ function sortList() {
     list.innerHTML = sortedList;
 }
 
-// Jquery
+//------------------------- Jquery show and hide calculator steps------------------------------//
+// Hide steps list items on document loaded//
+$(function () {
+    $("#instruct").hide();
+});
+
+//Show and hide list items when icon is clicked and add class to rotate the arrow icon with css//
+$("#rotate").on("click", function () {
+    $("#instruct").slideToggle(1000);
+    if($("#rotate").hasClass("down")){
+        $(this).removeClass("down").addClass("up");
+       }else{
+        $(this).removeClass("up").addClass("down");
+       }
+});
 
 
-
-// funtion to collapse mobile nav on clicking links
-$('.navbar-nav>li>a').on('click', function(){
+// Jquery funtion to collapse mobile nav on clicking links
+$('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
-    });
+});
