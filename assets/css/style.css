@@ -251,13 +251,13 @@ h2 i,
 }
 
 /* Instruction steps icon */
-.savings-steps h3 i {
+#rotate {
     display: inline-block !important;
     font-size: 35px;
     transition: all 0.35s ease-in-out;
 }
 
-.savings-steps h3 i:hover {
+#rotate:hover {
     font-size: 40px;
     color: #212529;
     cursor: pointer;
@@ -557,6 +557,14 @@ footer h3 {
         margin-right: auto;
         width: 90%; 
     }
+    #rotate {
+        display: block !important;
+    }
+    #rotate:hover {
+        font-size: 40px;
+        color: #ea5c20;
+    }
+    
 }
 
 /* Keyframes */
