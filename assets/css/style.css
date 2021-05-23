@@ -53,6 +53,18 @@
     animation-duration: 2s;
 }
 
+/* Read More Read Less buttons */
+.intros-btn {
+    border-radius: 25px;
+    background: #ea5c20;
+    color: #fff;
+    border: none;
+}
+
+#more, #more-2 {
+    display: none;
+}
+
 /* Home and services page intro image and text 2 columns container */
 .intros {
     margin-top: 150px;

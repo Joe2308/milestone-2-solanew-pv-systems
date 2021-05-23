@@ -13,7 +13,7 @@ function onChange() {
     var savings = computeSavings(irradience, roofSpace, unitCost, orientation);
     savings = savings.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
 
-    // Waring message added if customer does not choose a county//
+    // Warning message added if customer does not choose a county//
     if (irradience === "default") {
         document.getElementById("savings").innerHTML = "Please Choose County!";
 
@@ -76,7 +76,7 @@ $("#rotate").on("click", function () {
     $("#instruct").slideToggle(1000);
     if($("#rotate").hasClass("down")){
         $(this).removeClass("down").addClass("up");
-       }else{
+       } else {
         $(this).removeClass("up").addClass("down");
        }
 });
@@ -85,4 +85,30 @@ $("#rotate").on("click", function () {
 // Jquery funtion to collapse mobile nav on clicking links
 $('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
+});
+
+//Jquery for Read More Read Less paragraph 1//
+$("#show-btn").on("click", function () {
+    if($("#dots").css("display") === "none") {
+        $("#dots").css("display", "inline");
+        $(this).text("Read More");
+        $("#more").css("display", "none");
+        } else {
+            $("#dots").css("display", "none");
+            $(this).text("Read Less");
+            $("#more").css("display", "inline");
+        }
+});
+
+//Jquery for Read More Read Less paragraph 2//
+$("#show-btn-2").on("click", function () {
+    if($("#dots-2").css("display") === "none") {
+        $("#dots-2").css("display", "inline");
+        $(this).text("Read More");
+        $("#more-2").css("display", "none");
+        } else {
+            $("#dots-2").css("display", "none");
+            $(this).text("Read Less");
+            $("#more-2").css("display", "inline");
+        }
 });
