@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Solanew PV Systems</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_oAEvMTJWLFuZ2ELEDtTYD");
+        })();
+    </script>
 </head>
 
 <!-- Bootstrap scroll spy from clever techie YouTube tutorial https://youtu.be/YedRs7J6qEM -->
@@ -348,8 +355,7 @@
             <div class="row bg-contact">
                 <div class="col">
                     <div class="center-form">
-                        <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank"
-                            rel="noreferrer">
+                        <form onsubmit="return sendMail(this);">
                             <div class="form-group">
                                 <label for="fullname" class="form-label">
                                     Full Name
