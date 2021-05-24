@@ -27,22 +27,22 @@ function onChange() {
 function computeSavings(irradience, roofSpace, unitCost, orientation) {
 
     // Math to determine solar radiance based on a solar panel that is 19% effiecient//
-    var efficiency = (irradience * .19);
+    var efficiency = (irradience * 0.19);
 
     // If user chooses west facing roof we add 2% losses to efficiency of solar panels//
     if (orientation === "west") {
-        efficiency = (irradience * .17);
+        efficiency = (irradience * 0.17);
 
         // If user chooses east facing roof we add 4% losses to efficiency of solar panels//
     } else if (orientation === "east") {
-        efficiency = (irradience * .15);
+        efficiency = (irradience * 0.15);
     }
 
     // The total generation of the system is based on it's efficiency times available roof space//
     var generation = (efficiency * roofSpace);
 
     // Savings made is the total generation times what the customer pays per unit of electricity//
-    var savings = (generation * (unitCost * .01)).toFixed(2);
+    var savings = (generation * (unitCost * 0.01)).toFixed(2);
     return savings;
 }
 
