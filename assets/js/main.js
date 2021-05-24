@@ -1,9 +1,6 @@
-// Solar savings calculator event listeners added to input field values to call onChange function//
-document.getElementById("irradience").addEventListener("change", onChange);
-document.getElementById("roof_space").addEventListener("change", onChange);
-document.getElementById("unit_cost").addEventListener("change", onChange);
-document.getElementById("orientation").addEventListener("change", onChange);
-
+/**
+ * Event handler to execute input field values
+ */
 function onChange() {
     var irradience = document.getElementById("irradience").value;
     var roofSpace = document.getElementById("roof_space").value;
@@ -21,9 +18,19 @@ function onChange() {
     } else {
         document.getElementById("savings").innerHTML = "Your Annual Savings = €" + savings;
     }
+
+    showAnswer();
 }
 
-
+/**
+ * Calculate total savings based on the passed parameters
+ * 
+ * @param {Number} irradience 
+ * @param {Number} roofSpace 
+ * @param {Number} unitCost 
+ * @param {String} orientation 
+ * @returns {Number} savings in euros
+ */
 function computeSavings(irradience, roofSpace, unitCost, orientation) {
 
     // Math to determine solar radiance based on a solar panel that is 19% effiecient//
@@ -39,69 +46,75 @@ function computeSavings(irradience, roofSpace, unitCost, orientation) {
     }
 
     // The total generation of the system is based on it's efficiency times available roof space//
-    var generation = (efficiency * roofSpace);
+    const generation = (efficiency * roofSpace);
 
     // Savings made is the total generation times what the customer pays per unit of electricity//
-    var savings = (generation * (unitCost * 0.01)).toFixed(2);
-    return savings;
+    return (generation * (unitCost * 0.01)).toFixed(2);
 }
 
-//solar calculator answers section event listeners added to input fields to call showAnswer function//
-document.getElementById("irradience").addEventListener("change", showAnswer);
-document.getElementById("roof_space").addEventListener("change", showAnswer);
-document.getElementById("unit_cost").addEventListener("change", showAnswer);
-document.getElementById("orientation").addEventListener("change", showAnswer);
-
-// ShowAnswer function displays answer when input is selected//
+/**
+ * ShowAnswer function displays answer when input is selected
+ */
 function showAnswer() {
     document.getElementById('answer').style.display = 'block';
 }
 
-//--------------------------Jquery navbar--------------------------------------------------//
-// Jquery funtion to collapse mobile nav on clicking links
-$('.navbar-nav>li>a').on('click', function () {
-    $('.navbar-collapse').collapse('hide');
-});
 
-//---------------------------------Jquery Read More Read less paragraphs-----------------------------//
-//Jquery for Read More Read Less paragraph 1//
-$("#show-btn").on("click", function () {
-    if ($("#dots").css("display") === "none") {
-        $("#dots").css("display", "inline");
-        $(this).text("Read More");
-        $("#more").css("display", "none");
-    } else {
-        $("#dots").css("display", "none");
-        $(this).text("Read Less");
-        $("#more").css("display", "inline");
-    }
-});
 
-//Jquery for Read More Read Less paragraph 2//
-$("#show-btn-2").on("click", function () {
-    if ($("#dots-2").css("display") === "none") {
-        $("#dots-2").css("display", "inline");
-        $(this).text("Read More");
-        $("#more-2").css("display", "none");
-    } else {
-        $("#dots-2").css("display", "none");
-        $(this).text("Read Less");
-        $("#more-2").css("display", "inline");
-    }
-});
-
-//------------------------- Jquery show and hide calculator steps------------------------------//
-// Hide steps list items on document loaded//
+// Hide steps list items on document loaded
 $(function () {
     $("#instruct").hide();
-});
 
-//Show and hide list items when icon is clicked and add class to rotate the arrow icon with css//
-$("#rotate").on("click", function () {
-    $("#instruct").slideToggle(1000);
-    if ($("#rotate").hasClass("down")) {
-        $(this).removeClass("down").addClass("up");
-    } else {
-        $(this).removeClass("up").addClass("down");
-    }
+    //Show and hide list items when icon is clicked and add class to rotate the arrow icon with css
+    $("#rotate").on("click", function () {
+        $("#instruct").slideToggle(1000);
+        if ($("#rotate").hasClass("down")) {
+            $(this).removeClass("down").addClass("up");
+        } else {
+            $(this).removeClass("up").addClass("down");
+        }
+    });
+
+    // Jquery funtion to collapse mobile nav on clicking links
+    $('.navbar-nav>li>a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    //Jquery for Read More Read Less paragraph 1
+    $("#show-btn").on("click", function () {
+        if ($("#dots").css("display") === "none") {
+            $("#dots").css("display", "inline");
+            $(this).text("Read More");
+            $("#more").css("display", "none");
+        } else {
+            $("#dots").css("display", "none");
+            $(this).text("Read Less");
+            $("#more").css("display", "inline");
+        }
+    });
+
+    //Jquery for Read More Read Less paragraph 2
+    $("#show-btn-2").on("click", function () {
+        if ($("#dots-2").css("display") === "none") {
+            $("#dots-2").css("display", "inline");
+            $(this).text("Read More");
+            $("#more-2").css("display", "none");
+        } else {
+            $("#dots-2").css("display", "none");
+            $(this).text("Read Less");
+            $("#more-2").css("display", "inline");
+        }
+    });
+
+    // Solar savings calculator event listeners added to input field values to call onChange function
+    document.getElementById("irradience").addEventListener("change", onChange);
+    document.getElementById("roof_space").addEventListener("change", onChange);
+    document.getElementById("unit_cost").addEventListener("change", onChange);
+    document.getElementById("orientation").addEventListener("change", onChange);
+
+    //solar calculator answers section event listeners added to input fields to call showAnswer function
+    // document.getElementById("irradience").addEventListener("change", showAnswer);
+    // document.getElementById("roof_space").addEventListener("change", showAnswer);
+    // document.getElementById("unit_cost").addEventListener("change", showAnswer);
+    // document.getElementById("orientation").addEventListener("change", showAnswer);
 });
