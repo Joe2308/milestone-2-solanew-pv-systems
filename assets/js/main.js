@@ -57,14 +57,6 @@ function showAnswer() {
     document.getElementById('answer').style.display = 'block';
 }
 
-document.getElementById("irradience").addEventListener("change", sortList);
-
-function sortList() {
-    var list = document.getElementById("irradience");
-    sortedList = list.sort();
-    list.innerHTML = sortedList;
-}
-
 //------------------------- Jquery show and hide calculator steps------------------------------//
 // Hide steps list items on document loaded//
 $(function () {
