@@ -57,6 +57,39 @@ function showAnswer() {
     document.getElementById('answer').style.display = 'block';
 }
 
+//--------------------------Jquery navbar--------------------------------------------------//
+// Jquery funtion to collapse mobile nav on clicking links
+$('.navbar-nav>li>a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+});
+
+//---------------------------------Jquery Read More Read less paragraphs-----------------------------//
+//Jquery for Read More Read Less paragraph 1//
+$("#show-btn").on("click", function () {
+    if ($("#dots").css("display") === "none") {
+        $("#dots").css("display", "inline");
+        $(this).text("Read More");
+        $("#more").css("display", "none");
+    } else {
+        $("#dots").css("display", "none");
+        $(this).text("Read Less");
+        $("#more").css("display", "inline");
+    }
+});
+
+//Jquery for Read More Read Less paragraph 2//
+$("#show-btn-2").on("click", function () {
+    if ($("#dots-2").css("display") === "none") {
+        $("#dots-2").css("display", "inline");
+        $(this).text("Read More");
+        $("#more-2").css("display", "none");
+    } else {
+        $("#dots-2").css("display", "none");
+        $(this).text("Read Less");
+        $("#more-2").css("display", "inline");
+    }
+});
+
 //------------------------- Jquery show and hide calculator steps------------------------------//
 // Hide steps list items on document loaded//
 $(function () {
@@ -66,41 +99,9 @@ $(function () {
 //Show and hide list items when icon is clicked and add class to rotate the arrow icon with css//
 $("#rotate").on("click", function () {
     $("#instruct").slideToggle(1000);
-    if($("#rotate").hasClass("down")){
+    if ($("#rotate").hasClass("down")) {
         $(this).removeClass("down").addClass("up");
-       } else {
+    } else {
         $(this).removeClass("up").addClass("down");
-       }
-});
-
-
-// Jquery funtion to collapse mobile nav on clicking links
-$('.navbar-nav>li>a').on('click', function () {
-    $('.navbar-collapse').collapse('hide');
-});
-
-//Jquery for Read More Read Less paragraph 1//
-$("#show-btn").on("click", function () {
-    if($("#dots").css("display") === "none") {
-        $("#dots").css("display", "inline");
-        $(this).text("Read More");
-        $("#more").css("display", "none");
-        } else {
-            $("#dots").css("display", "none");
-            $(this).text("Read Less");
-            $("#more").css("display", "inline");
-        }
-});
-
-//Jquery for Read More Read Less paragraph 2//
-$("#show-btn-2").on("click", function () {
-    if($("#dots-2").css("display") === "none") {
-        $("#dots-2").css("display", "inline");
-        $(this).text("Read More");
-        $("#more-2").css("display", "none");
-        } else {
-            $("#dots-2").css("display", "none");
-            $(this).text("Read Less");
-            $("#more-2").css("display", "inline");
-        }
+    }
 });
