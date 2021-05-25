@@ -111,10 +111,4 @@ $(function () {
     document.getElementById("roof_space").addEventListener("change", onChange);
     document.getElementById("unit_cost").addEventListener("change", onChange);
     document.getElementById("orientation").addEventListener("change", onChange);
-
-    //solar calculator answers section event listeners added to input fields to call showAnswer function
-    // document.getElementById("irradience").addEventListener("change", showAnswer);
-    // document.getElementById("roof_space").addEventListener("change", showAnswer);
-    // document.getElementById("unit_cost").addEventListener("change", showAnswer);
-    // document.getElementById("orientation").addEventListener("change", showAnswer);
 });

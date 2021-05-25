@@ -375,8 +375,13 @@
                                 required></textarea>
                             <div class="form-row text-center">
                                 <div class="col">
-                                    <button type="submit" class="btn btn-lg btn-outline-dark contact-btn">Send
+                                    <button type="submit" id="btn-submit"
+                                        class="btn btn-lg btn-outline-dark contact-btn">Send
                                         Now</button>
+                                    <div id="form-alert" class="col alert alert-success collapse text-center">
+                                        <a href="#" id="alert-close" class="close">&times;</a>
+                                        <strong>Success!</strong> Your message has been sent.
+                                    </div>
                                 </div>
                             </div>
                         </form>

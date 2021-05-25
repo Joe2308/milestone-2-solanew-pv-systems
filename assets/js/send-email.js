@@ -5,13 +5,28 @@ function sendMail(contactForm) {
             "project_request": contactForm.messagesummary.value
         })
         .then(function (response) {
+                showAlert();
                 console.log("SUCCESS", response);
-                alert("Email sent successfully!");
             },
             function (error) {
-                console.log("FAILED", error)
-                alert("FAILED!" + error);
+                console.error("FAILED", error)
             });
 
     return false;
 }
+
+function showAlert() {
+    $("#btn-submit").click(function () {
+        if ($("#messagesummary").value === String) {
+            $("#form-alert").show("fade");
+
+            setTimeout(function () {
+                $("#form-alert").hide("fade");
+            }, 2000);
+        }
+    });
+
+    $("#alert-close").click(function () {
+        $("#form-alert").hide("fade");
+    });
+};
