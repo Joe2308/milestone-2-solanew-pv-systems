@@ -112,3 +112,19 @@ $(function () {
     document.getElementById("unit_cost").addEventListener("change", onChange);
     document.getElementById("orientation").addEventListener("change", onChange);
 });
+
+$(function () {
+    $(window).scroll(function () {
+        var scrolling = $(window).scrollTop();
+        if (scrolling > 50) {
+            $("#nav-scroll").css({
+                "background": "#908070",
+                "transition": ".5s ease-in-out"
+            });
+            $(".nav-link").css("color", "#fff");
+        } else {
+            $("#nav-scroll").css("background", "#fff");
+            $(".nav-link").css("color", "rgba(0,0,0,.5)");
+        }
+    });
+});
