@@ -5,7 +5,6 @@ function sendMail(contactForm) {
             "project_request": contactForm.messagesummary.value
         })
         .then(function (response) {
-                showAlert();
                 console.log("SUCCESS", response);
             },
             function (error) {
@@ -15,18 +14,29 @@ function sendMail(contactForm) {
     return false;
 }
 
-function showAlert() {
+/**
+ * Bootstrap success alert only show when required fields are filled.
+ * Based on youtube tutorial https://youtu.be/UTZjhCH80Zg
+ * I added an if else state myself to ensure alert only displayed after required fields had input.
+ */
+$(document).ready(function () {
     $("#btn-submit").click(function () {
-        if ($("#messagesummary").value === String) {
+
+        if ($("#fullname").val() == "" || $("#emailaddress").val() == "" || $("#messagesummary").val() == "") {
+            return;
+        } else {
+            //Show success alert
             $("#form-alert").show("fade");
 
+            //Set 2 second timeout for success alert
             setTimeout(function () {
                 $("#form-alert").hide("fade");
             }, 2000);
+
+            //manually close success alert
+            $("#alert-close").click(function () {
+                $("#form-alert").hide("fade");
+            });
         }
     });
-
-    $("#alert-close").click(function () {
-        $("#form-alert").hide("fade");
-    });
-};
+});
