@@ -60,9 +60,8 @@ function showAnswer() {
 }
 
 
-
-// Hide steps list items on document loaded
 $(function () {
+    // Hide steps list items on document loaded
     $("#instruct").hide();
 
     //Show and hide list items when icon is clicked and add class to rotate the arrow icon with css
@@ -78,6 +77,23 @@ $(function () {
     // Jquery funtion to collapse mobile nav on clicking links
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
+    });
+
+    //Jquery function to change nav bar color on scroll
+    $(window).scroll(function () {
+        var scrolling = $(window).scrollTop();
+        if (scrolling > 10) {
+            $("#nav-scroll").css({
+                "background": "#343a40",
+                "transition": ".3s ease-in-out"
+            });
+            $(".nav-link").css("color", "#fff");
+
+            $(".navbar-toggler").css("background", "#fff");
+        } else {
+            $("#nav-scroll").css("background", "#fff");
+            $(".nav-link").css("color", "rgba(0,0,0,.5)");
+        }
     });
 
     //Jquery for Read More Read Less paragraph 1
@@ -111,20 +127,4 @@ $(function () {
     document.getElementById("roof_space").addEventListener("change", onChange);
     document.getElementById("unit_cost").addEventListener("change", onChange);
     document.getElementById("orientation").addEventListener("change", onChange);
-});
-
-$(function () {
-    $(window).scroll(function () {
-        var scrolling = $(window).scrollTop();
-        if (scrolling > 50) {
-            $("#nav-scroll").css({
-                "background": "#908070",
-                "transition": ".5s ease-in-out"
-            });
-            $(".nav-link").css("color", "#fff");
-        } else {
-            $("#nav-scroll").css("background", "#fff");
-            $(".nav-link").css("color", "rgba(0,0,0,.5)");
-        }
-    });
 });

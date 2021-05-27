@@ -1,19 +1,24 @@
 /* Remove margin and padding all bootstrap full size containers */
+body,
 .container-fluid {
     padding: 0;
     margin: 0;
 }
 
+
 /* Nav bar logo */
 .smaller-image {
     width: 130px; 
-    height: auto;
+    height: 40px;
 }
 
 /* Nav bar links menu */
-.navbar-nav .nav-item.active .nav-link,
-.navbar-nav .nav-item:hover .nav-link {
-    color: #ea5c20;
+nav .nav-link:hover {
+    color: #ea5c20 !important;
+}
+
+nav .nav-link.active {
+    color: #ea5c20 !important;
 }
 
 .navbar-light {
@@ -27,7 +32,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 /* Home page title */
