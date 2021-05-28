@@ -64,9 +64,6 @@ $(function () {
     // Hide steps list items on document loaded
     $("#instruct").hide();
 
-    //Hide scroll to top button on document loaded
-    $("#scroll-to-top").hide();
-
     //Show and hide list items when icon is clicked and add class to rotate the arrow icon with css
     $("#rotate").on("click", function () {
         $("#instruct").slideToggle(1000);
