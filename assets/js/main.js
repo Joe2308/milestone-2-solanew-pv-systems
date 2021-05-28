@@ -64,6 +64,9 @@ $(function () {
     // Hide steps list items on document loaded
     $("#instruct").hide();
 
+    //Hide scroll to top button on document loaded
+    $("#scroll-to-top").hide();
+
     //Show and hide list items when icon is clicked and add class to rotate the arrow icon with css
     $("#rotate").on("click", function () {
         $("#instruct").slideToggle(1000);
@@ -96,6 +99,20 @@ $(function () {
         } else {
             $("#nav-scroll").css("background", "#fff");
             $(".nav-link").css("color", "rgba(0,0,0,.5)");
+        }
+    });
+
+    //Scroll to top button from tutorial https://youtu.be/TjZw8VXCuOg
+    $("#scroll-to-top").on("click", function () {
+        window.scrollTo(0, 0);
+    });
+
+    //Scroll to top only appears when windo is scrolled 20px
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 40) {
+            $("#scroll-to-top").fadeIn();
+        } else {
+            $("#scroll-to-top").fadeOut();
         }
     });
 
