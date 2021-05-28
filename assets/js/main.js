@@ -85,7 +85,10 @@ $(function () {
         if (scrolling > 10) {
             $("#nav-scroll").css({
                 "background": "#343a40",
-                "transition": ".3s ease-in-out"
+                "transition": ".3s ease-in-out",
+                "-moz-transition": ".3s ease-in-out",
+                "-webkit-transition": "0.3s ease-in-out",
+                "-o-transition": "0.3s ease-in-out"
             });
             $(".nav-link").css("color", "#fff");
 
