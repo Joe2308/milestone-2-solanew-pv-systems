@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Remove margin and padding all bootstrap full size containers */
 body,
 .container-fluid {
@@ -95,8 +102,10 @@ nav .nav-link.active {
     margin-top: 0px;
     text-align: center;
     text-transform: capitalize;
-    animation-name: moveToLeft;
-    animation-duration: 2s;
+    -webkit-animation-name: moveToLeft;
+            animation-name: moveToLeft;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
 }
 
 /* Home page call to action button  Keyframes from youtube tutorial https://youtu.be/SPtSMjZlyUU*/ 
@@ -107,8 +116,10 @@ nav .nav-link.active {
     color: #fff;
     border: none;
     text-transform: capitalize;
-    animation-name: moveToRight;
-    animation-duration: 2s;
+    -webkit-animation-name: moveToRight;
+            animation-name: moveToRight;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
 }
 
 /* Read More Read Less buttons */
@@ -140,7 +151,7 @@ nav .nav-link.active {
 /* Home intro text section */
 .intro-text P {
     margin-top: 55px;
-    text-align: justify;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #585855;
@@ -174,7 +185,8 @@ h3 {
 
 .card {
     border-radius: 12px;
-    box-shadow: 10px 5px 5px #a9a9a9;
+    -webkit-box-shadow: 10px 5px 5px #a9a9a9;
+            box-shadow: 10px 5px 5px #a9a9a9;
 }
 
 .box-1, .box-2, .box-3 {
@@ -235,7 +247,7 @@ h2 i,
 /* Services intro text */
 .services-text P {
     margin-top: 55px;
-    text-align: justify;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #585855;
@@ -273,6 +285,8 @@ h2 i,
 #rotate {
     display: inline-block !important;
     font-size: 35px;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
 }
 
@@ -284,7 +298,9 @@ h2 i,
 
 /* Using JQuery to add this class to rotate steps icon when clicked */
 .up {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     }
 
 /* Savings calculator input form */
@@ -297,7 +313,8 @@ h2 i,
     margin-right: auto;
     margin-top: 55px;
     text-align: center;
-    box-shadow: 10px 5px 5px #a9a9a9;
+    -webkit-box-shadow: 10px 5px 5px #a9a9a9;
+            box-shadow: 10px 5px 5px #a9a9a9;
     border-radius: 5px;
 }
 
@@ -342,7 +359,8 @@ textarea {
     background-color: #fff;
     border: 1.5px solid black;
     border-radius: 5px;
-    box-shadow: 3px 1px 1px #a9a9a9;
+    -webkit-box-shadow: 3px 1px 1px #a9a9a9;
+            box-shadow: 3px 1px 1px #a9a9a9;
 }
 
 #savings {
@@ -356,7 +374,8 @@ textarea {
     margin: auto;
     border: black 1px solid;
     text-align: center;
-    box-shadow: 10px 5px 5px #a9a9a9;
+    -webkit-box-shadow: 10px 5px 5px #a9a9a9;
+            box-shadow: 10px 5px 5px #a9a9a9;
     background-color: #fff;
     border-radius: 5px;
 }
@@ -369,7 +388,8 @@ textarea {
 .bg-contact {
     margin-top: 55px;
     background: cornsilk;
-    box-shadow: 10px 5px 5px #a9a9a9;
+    -webkit-box-shadow: 10px 5px 5px #a9a9a9;
+            box-shadow: 10px 5px 5px #a9a9a9;
     border-radius: 5px;
 }
 
@@ -564,6 +584,8 @@ footer h3 {
 /* 280px screen sizes */
 @media(max-width:280px) {
     .card {
+        width: -webkit-fit-content !important;
+        width: -moz-fit-content !important;
         width: fit-content !important;
     }
     #answer, 
@@ -578,24 +600,53 @@ footer h3 {
 }
 
 /*-------------------------------------------------- Keyframes -----------------------------*/
-@keyframes moveToLeft {
+@-webkit-keyframes moveToLeft {
     from {
-        transform: translateX(120px);
+        -webkit-transform: translateX(120px);
+                transform: translateX(120px);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes moveToLeft {
+    from {
+        -webkit-transform: translateX(120px);
+                transform: translateX(120px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes moveToRight {
+    from {
+        -webkit-transform: translateX(-120px);
+                transform: translateX(-120px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes moveToRight {
     from {
-        transform: translateX(-120px);
+        -webkit-transform: translateX(-120px);
+                transform: translateX(-120px);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
         opacity: 1;
     }
 }

@@ -8,7 +8,7 @@ function sendMail(contactForm) {
                 console.log("SUCCESS", response);
             },
             function (error) {
-                console.error("FAILED", error)
+                console.error("FAILED", error);
             });
 
     return false;
