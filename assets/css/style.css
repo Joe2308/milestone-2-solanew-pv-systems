@@ -27,14 +27,14 @@ body,
     color: #fff;
     cursor: pointer;
     -webkit-box-shadow: 0px 2px 2px #a9a9a9;
-            box-shadow: 0px 2px 2px #a9a9a9;
+    box-shadow: 0px 2px 2px #a9a9a9;
     z-index: 1;
 }
 
 /*---------------------------------------- Navigation -----------------------------------*/
 /* Nav bar logo */
 .smaller-image {
-    width: 130px; 
+    width: 130px;
     height: 40px;
 }
 
@@ -122,12 +122,12 @@ nav .nav-link.active {
     text-align: center;
     text-transform: capitalize;
     -webkit-animation-name: moveToLeft;
-            animation-name: moveToLeft;
+    animation-name: moveToLeft;
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    animation-duration: 2s;
 }
 
-/* Home page call to action button  Keyframes from youtube tutorial https://youtu.be/SPtSMjZlyUU*/ 
+/* Home page call to action button  Keyframes from youtube tutorial https://youtu.be/SPtSMjZlyUU*/
 .home-learn {
     margin-top: 30px;
     border-radius: 25px;
@@ -136,9 +136,9 @@ nav .nav-link.active {
     border: none;
     text-transform: capitalize;
     -webkit-animation-name: moveToRight;
-            animation-name: moveToRight;
+    animation-name: moveToRight;
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 /* Read More Read Less buttons */
@@ -149,7 +149,8 @@ nav .nav-link.active {
     border: none;
 }
 
-#more, #more-2 {
+#more,
+#more-2 {
     display: none;
 }
 
@@ -205,10 +206,12 @@ h3 {
 .card {
     border-radius: 12px;
     -webkit-box-shadow: 10px 5px 5px #a9a9a9;
-            box-shadow: 10px 5px 5px #a9a9a9;
+    box-shadow: 10px 5px 5px #a9a9a9;
 }
 
-.box-1, .box-2, .box-3 {
+.box-1,
+.box-2,
+.box-3 {
     margin: auto;
 }
 
@@ -318,9 +321,9 @@ h2 i,
 /* Using JQuery to add this class to rotate steps icon when clicked */
 .up {
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
-    }
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 
 /* Savings calculator input form */
 .form {
@@ -332,7 +335,7 @@ h2 i,
     margin-top: 55px;
     text-align: center;
     -webkit-box-shadow: 10px 5px 5px #a9a9a9;
-            box-shadow: 10px 5px 5px #a9a9a9;
+    box-shadow: 10px 5px 5px #a9a9a9;
     border-radius: 5px;
 }
 
@@ -356,9 +359,9 @@ h2 i,
     border-radius: 5px;
 }
 
-.location-select, 
-.orientation-select, 
-.roof-space, 
+.location-select,
+.orientation-select,
+.roof-space,
 .unit-cost {
     margin: 25px;
 }
@@ -368,8 +371,8 @@ h2 i,
     margin-bottom: 55px;
 }
 
-select, 
-input, 
+select,
+input,
 textarea {
     width: 200px;
     height: 25px;
@@ -377,7 +380,7 @@ textarea {
     border: 1.5px solid black;
     border-radius: 5px;
     -webkit-box-shadow: 3px 1px 1px #a9a9a9;
-            box-shadow: 3px 1px 1px #a9a9a9;
+    box-shadow: 3px 1px 1px #a9a9a9;
 }
 
 #savings {
@@ -392,7 +395,7 @@ textarea {
     border: black 1px solid;
     text-align: center;
     -webkit-box-shadow: 10px 5px 5px #a9a9a9;
-            box-shadow: 10px 5px 5px #a9a9a9;
+    box-shadow: 10px 5px 5px #a9a9a9;
     background-color: #fff;
     border-radius: 5px;
 }
@@ -406,7 +409,7 @@ textarea {
     margin-top: 55px;
     background: cornsilk;
     -webkit-box-shadow: 10px 5px 5px #a9a9a9;
-            box-shadow: 10px 5px 5px #a9a9a9;
+    box-shadow: 10px 5px 5px #a9a9a9;
     border-radius: 5px;
 }
 
@@ -434,10 +437,12 @@ textarea {
 #map {
     margin-top: 55px;
     height: 500px;
-    max-width: 85%;
+    max-width: 90%;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-box-shadow: 10px 5px 5px #a9a9a9;
+    box-shadow: 10px 5px 5px #a9a9a9;
 }
 
 .fa-building {
@@ -451,7 +456,8 @@ footer {
     min-height: 100px;
     margin-top: 55px;
     padding-bottom: 15px;
-    border-top: 1px solid #a9a9a9;;
+    border-top: 1px solid #a9a9a9;
+    ;
 }
 
 footer h3 {
@@ -474,7 +480,7 @@ footer h3 {
     border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
-   
+
     color: #fafafa;
     background: #ea5c20;
     transition: all 0.35s ease-in-out;
@@ -482,7 +488,7 @@ footer h3 {
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
     -webkit-box-shadow: 10px 5px 5px #a9a9a9;
-            box-shadow: 10px 5px 5px #a9a9a9;
+    box-shadow: 10px 5px 5px #a9a9a9;
 }
 
 .social-links li a i:hover {
@@ -491,7 +497,7 @@ footer h3 {
 
 .footer .copyright {
     font-size: 1.3rem;
-    text-shadow: .5px .5px #a9a9a9; 
+    text-shadow: .5px .5px #a9a9a9;
 }
 
 
@@ -502,16 +508,19 @@ footer h3 {
     .intro-image-home {
         margin-top: 140px;
     }
+
     .services-hero {
         min-height: 600px;
-        }
+    }
+
     .btn:hover {
-            background-color: #ea5c20;
-        }
+        background-color: #ea5c20;
+    }
+
     #rotate:hover {
-            font-size: 40px;
-            color: #ea5c20;
-        }
+        font-size: 40px;
+        color: #ea5c20;
+    }
 }
 
 /* 768px screen sizes */
@@ -522,27 +531,33 @@ footer h3 {
         background-size: cover;
         min-height: 300px;
     }
+
     .home-learn {
         font-size: 16px;
     }
+
     .intro-image-home {
         margin-top: 55px;
         margin-left: auto;
         margin-right: auto;
-       }
-       .intro-image-services {
+    }
+
+    .intro-image-services {
         display: none;
     }
+
     .split {
         margin-bottom: 85px;
         width: 90%;
     }
+
     .services-hero {
         min-height: 500px;
-        }
+    }
+
     .service-end {
-            margin-top: 55px;
-        }
+        margin-top: 55px;
+    }
 }
 
 /* between 600px and 768px screen sizes */
@@ -558,6 +573,7 @@ footer h3 {
     .card {
         margin-bottom: 15px !important;
     }
+
     .intro-image-home {
         margin-left: auto;
         margin-right: auto;
@@ -571,17 +587,21 @@ footer h3 {
     .intro-image-services {
         display: none;
     }
+
     .service-end {
         margin-top: -25px;
     }
+
     .contact {
         width: 80%;
     }
+
     .savings-title {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
+
     .services-hero {
         background: url(/assets/images/services-media.jpeg);
         background-position: center;
@@ -591,9 +611,10 @@ footer h3 {
         margin-top: 80px;
         margin-left: auto;
         margin-right: auto;
-        width: 95%; 
+        width: 95%;
         border-radius: 5px;
     }
+
     #rotate {
         display: block !important;
     }
@@ -604,6 +625,7 @@ footer h3 {
     .home-hero {
         min-height: 230px;
     }
+
     .home-title h2 {
         font-size: 45px !important;
     }
@@ -620,12 +642,14 @@ footer h3 {
         width: -moz-fit-content !important;
         width: fit-content !important;
     }
-    #answer, 
-    select, 
-    input, 
+
+    #answer,
+    select,
+    input,
     textarea {
         width: 150px;
     }
+
     .intro-image-home {
         height: 200px;
     }
@@ -635,24 +659,27 @@ footer h3 {
 @-webkit-keyframes moveToLeft {
     from {
         -webkit-transform: translateX(120px);
-                transform: translateX(120px);
+        transform: translateX(120px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
+
 @keyframes moveToLeft {
     from {
         -webkit-transform: translateX(120px);
-                transform: translateX(120px);
+        transform: translateX(120px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -660,12 +687,13 @@ footer h3 {
 @-webkit-keyframes moveToRight {
     from {
         -webkit-transform: translateX(-120px);
-                transform: translateX(-120px);
+        transform: translateX(-120px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -673,12 +701,13 @@ footer h3 {
 @keyframes moveToRight {
     from {
         -webkit-transform: translateX(-120px);
-                transform: translateX(-120px);
+        transform: translateX(-120px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }

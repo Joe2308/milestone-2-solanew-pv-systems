@@ -450,6 +450,8 @@
 
     </footer>
 
+    <script src="assets/js/maps.js"></script>
+
     <script src="assets/js/send-email.js"></script>
 
     <script src="assets/js/main.js"></script>
@@ -461,29 +463,6 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
 
-    <script>
-        function initMap() {
-            // Map options
-            var options = {
-                zoom: 8,
-                center: {
-                    lat: 53.7276,
-                    lng: -7.7933
-                }
-            }
-            // New map
-            var map = new google.maps.Map(document.getElementById("map"), options);
-
-            // Add marker
-            var marker = new google.maps.Marker({
-                position: {
-                    lat: 53.5644,
-                    lng: -7.7646
-                },
-                map: map
-            });
-        }
-    </script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjv0qhzbRNzIo6zBlZccu4pRA2-k2KstQ&callback=initMap&libraries=&v=weekly"
         async>
