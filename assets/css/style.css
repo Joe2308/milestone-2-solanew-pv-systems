@@ -429,6 +429,21 @@ textarea {
     margin-top: 55px;
 }
 
+/* ------------------------------------------------Map---------------------------------------- */
+
+#map {
+    margin-top: 55px;
+    height: 500px;
+    max-width: 85%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-building {
+    margin-top: 55px;
+}
+
 /* -----------------------------------------------Footer -----------------------------------------*/
 
 footer {
