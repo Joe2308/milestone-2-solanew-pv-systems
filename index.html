@@ -276,40 +276,40 @@
                             <label for="irradience">
                                 Select Your County
                             </label>
-                            <select id="irradience">
+                            <select id="irradience" class="point">
                                 <option hidden selected value="default">Choose County</option>
-                                <option value="1000">Donegal</option>
-                                <option value="1050">Derry</option>
-                                <option value="1100">Antrim</option>
-                                <option value="1150">Down</option>
-                                <option value="1050">Tyrone</option>
-                                <option value="1100">Armagh</option>
-                                <option value="1020">Fermanagh</option>
-                                <option value="980">Cavan</option>
-                                <option value="960">Monaghan</option>
-                                <option value="980">Lietrim</option>
-                                <option value="990">Louth</option>
-                                <option value="850">Meath</option>
-                                <option value="900">Sligo</option>
-                                <option value="880">Longford</option>
-                                <option value="780">Roscommon</option>
-                                <option value="830">Mayo</option>
-                                <option value="880">Westmeath</option>
-                                <option value="980">Galway</option>
-                                <option value="850">Offaly</option>
-                                <option value="900">Laois</option>
-                                <option value="920">Kildare</option>
-                                <option value="1000">Dublin</option>
-                                <option value="1120">Wicklow</option>
-                                <option value="1100">Carlow</option>
-                                <option value="1160">Clare</option>
-                                <option value="1200">Kilkenny</option>
-                                <option value="1230">Tipperary</option>
-                                <option value="1180">Limerick</option>
+                                <option value="1000">Antrim</option>
+                                <option value="1050">Armagh</option>
+                                <option value="1000">Carlow</option>
+                                <option value="900">Cavan</option>
+                                <option value="880">Clare</option>
+                                <option value="1095">Cork</option>
+                                <option value="980">Derry</option>
+                                <option value="980">Donegal</option>
+                                <option value="960">Down</option>
+                                <option value="980">Dublin</option>
+                                <option value="990">Fermanagh</option>
+                                <option value="850">Galway</option>
                                 <option value="950">Kerry</option>
-                                <option value="1250">Cork</option>
-                                <option value="1280">Wexford</option>
-                                <option value="1270">Waterford</option>
+                                <option value="950">Kildare</option>
+                                <option value="100">Kilkenny</option>
+                                <option value="900">Laois</option>
+                                <option value="1270">Lietrim</option>
+                                <option value="880">Limerick</option>
+                                <option value="900">Longford</option>
+                                <option value="900">Louth</option>
+                                <option value="880">Mayo</option>
+                                <option value="920">Meath</option>
+                                <option value="1000">Monaghan</option>
+                                <option value="900">Offaly</option>
+                                <option value="880">Roscommon</option>
+                                <option value="890">Sligo</option>
+                                <option value="900">Tipperary</option>
+                                <option value="930">Tyrone</option>
+                                <option value="1095">Waterford</option>
+                                <option value="950">Westmeath</option>
+                                <option value="1100">Wexford</option>
+                                <option value="1025">Wicklow</option>
                             </select>
                         </div>
                         <!-- Select roof orientation section -->
@@ -317,7 +317,7 @@
                             <label for="orientation">
                                 Roof Orientation
                             </label>
-                            <select id="orientation">
+                            <select id="orientation" class="point">
                                 <option value="south">South</option>
                                 <option value="west">West</option>
                                 <option value="east">East</option>
@@ -328,14 +328,14 @@
                             <label for="roof_space">
                                 Roof Space m2
                             </label>
-                            <input id="roof_space" type="number" min="0" max="1000" value="5" step=".5">
+                            <input class="point" id="roof_space" type="number" min="0" max="1000" value="5" step=".5">
                         </div>
                         <!-- Select current cost per unit of electricity section -->
                         <div class="unit-cost form-group">
                             <label for="unit_cost">
                                 Unit Cost Cents
                             </label>
-                            <input id="unit_cost" type="number" min="1" max="100" value="1" step=".5">
+                            <input class="point" id="unit_cost" type="number" min="1" max="100" value="1" step=".5">
                         </div>
                         <!-- Answer div displayed by JS -->
                         <div class="col ans-box">

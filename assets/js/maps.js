@@ -1,3 +1,6 @@
+/**
+ * Google maps API from tutorial https://youtu.be/Zxf1mnP5zcw
+ */
 function initMap() {
     // Map options
     var options = {
@@ -19,7 +22,7 @@ function initMap() {
         map: map
     });
 
-    // 
+    // Add info window
     var infoWindow = new google.maps.InfoWindow({
         content: "<h3>SolaNew PV Systems</h3>"
     });

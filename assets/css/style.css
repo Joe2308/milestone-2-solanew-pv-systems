@@ -383,6 +383,10 @@ textarea {
     box-shadow: 3px 1px 1px #a9a9a9;
 }
 
+.point {
+    cursor: pointer;
+}
+
 #savings {
     margin: 5px;
 }
