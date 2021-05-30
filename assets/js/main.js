@@ -105,6 +105,7 @@ $(function () {
         } else {
             $("#nav-scroll").css("background", "#585855");
             $(".nav-link").css("color", "#fff");
+            $(".navbar-toggler").css("background", "#fff")
         }
     });
 
