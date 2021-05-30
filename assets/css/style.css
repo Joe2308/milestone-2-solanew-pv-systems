@@ -363,7 +363,7 @@ h2 i,
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(/assets/images/calculator.jpeg);
+    background: url(../images/calculator.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: .75;
@@ -621,7 +621,7 @@ footer h3 {
     }
 
     .services-hero {
-        background: url(/assets/images/services-media.jpeg);
+        background: url(../images/services-media.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
