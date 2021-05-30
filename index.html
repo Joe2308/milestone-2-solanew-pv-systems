@@ -19,6 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
     <script>
+        // Email JS
         (function () {
             emailjs.init("user_oAEvMTJWLFuZ2ELEDtTYD");
         })();
@@ -29,6 +30,7 @@
 
 <body data-spy="scroll" data-target="#nav-scroll" data-offset="50">
 
+    <!-- Scroll to top button -->
     <button id="scroll-to-top">
         <i class="fas fa-arrow-circle-up"></i>
     </button>
@@ -175,8 +177,9 @@
     <section class="services" id="services">
         <div class="container-fluid">
             <div class="row no-gutters">
-                <div class="col services-title">
-                    <h2>Services</h2>
+                <div class="col">
+                    <h2 class="title services-title"><i class="fas fa-tools" aria-hidden="true"></i> Services</h2>
+                    <hr class=" savings-divider">
                 </div>
             </div>
             <div class="row text-center no-gutters">
@@ -225,8 +228,8 @@
 
     <!-- Solar Savings Calculator -->
     <section id="savings-calculator">
-        <h2 class="savings-title"><i class="fas fa-solar-panel" aria-hidden="true"></i> Try Our Solar savings
-            Calculator!</h2>
+        <h2 class="savings-title title"><i class="fas fa-solar-panel" aria-hidden="true"></i> Try Our Solar savings
+            Calculator</h2>
         <hr class=" savings-divider">
         <div class="container savings-steps">
             <div class="row no-gutters intro-text">
@@ -237,8 +240,8 @@
                     this great <a class="video-link" href="https://youtu.be/2jhxnXGnvaA" target="_blank"
                         rel="noreferrer">video</a>.
                 </p>
-                <!-- Arrow icon rotates 180 degrees using css and Jquery -->
-                <h3>Savings Calculator Instructions: <i id="rotate" class="down fas fa-angle-down"
+                <!-- Arrow icon rotates 180 degrees using css and Jquery based on stackoverflow suggestions-->
+                <h3>Click The Arrow For Instructions <i id="rotate" class="down fas fa-angle-down"
                         aria-hidden="true"></i>
                 </h3>
                 <div>
@@ -265,9 +268,9 @@
             </div>
         </div>
 
-        <!-- Calculator container -->
+        <!-- Calculator container orgional concept from https://youtu.be/vkBiEuZSq9s expanded and adapted to suit my needs-->
         <div class="container-fluid">
-            <div class="row no-gutters form">
+            <div class="row no-gutters form" title="Scientist with solar energy calculator">
                 <div class="savings-bg"></div>
                 <div class="col">
                     <form>
@@ -351,9 +354,9 @@
     </section>
     <hr class="end-section">
 
-    <!-- Contact form -->
+    <!-- Contact form using bootstrap and sending using email JS-->
     <section id="contact-us">
-        <h2><i class="fas fa-envelope" aria-hidden="true"></i> Let's Talk!</h2>
+        <h2 class="title"><i class="fas fa-envelope" aria-hidden="true"></i> Let's Talk!</h2>
         <hr class="contact-divider">
         <div class="container contact">
             <div class="row bg-contact">
@@ -382,6 +385,7 @@
                                     <button type="submit" id="btn-submit"
                                         class="btn btn-lg btn-outline-dark contact-btn">Send
                                         Now</button>
+                                    <!-- Bootstrap success alert message -->
                                     <div id="form-alert" class="col alert alert-success collapse text-center">
                                         <a href="#" id="alert-close" class="close">&times;</a>
                                         <strong>Success!</strong> Your message has been sent.
@@ -398,8 +402,8 @@
 
     <!-- Map section -->
     <section>
-        <div class="container">
-            <h2><i class="far fa-building" aria-hidden="true"></i> Visit Our Showroom</h2>
+        <div class="container" title="SolaNew Office Location">
+            <h2 class="title"><i class="far fa-building" aria-hidden="true"></i> Visit Our Showroom</h2>
             <hr class="contact-divider">
             <div id="map" class="row no-gutters"></div>
         </div>

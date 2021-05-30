@@ -1,5 +1,8 @@
+/*jshint esversion: 6 */
 /**
- * Event handler to execute input field values
+ * Solar calculator function event handler to execute input field values
+ * Origional concept from tutorial https://youtu.be/vkBiEuZSq9s expaned to suit my needs
+ * Credit to my mentor for help in tidying my functions
  */
 function onChange() {
     var irradience = document.getElementById("irradience").value;
@@ -54,93 +57,108 @@ function computeSavings(irradience, roofSpace, unitCost, orientation) {
 
 /**
  * ShowAnswer function displays answer when input is selected
+ * Answer is populated in empty h2 heading
  */
 function showAnswer() {
     document.getElementById('answer').style.display = 'block';
 }
 
-    $(function () {
-        // Hide steps list items on document loaded
-        $("#instruct").hide();
+/**
+ * Jquery funcitons on document load
+ */
+$(function () {
+    // Hide steps list items for solar calculator on document loaded
+    $("#instruct").hide();
 
-        //Show and hide list items when icon is clicked and add class to rotate the arrow icon with css
-        $("#rotate").on("click", function () {
-            $("#instruct").slideToggle(1000);
-            if ($("#rotate").hasClass("down")) {
-                $(this).removeClass("down").addClass("up");
-            } else {
-                $(this).removeClass("up").addClass("down");
-            }
-        });
-
-        // Jquery funtion to collapse mobile nav on clicking links
-        $('.navbar-nav>li>a').on('click', function () {
-            $('.navbar-collapse').collapse('hide');
-        });
-
-        //Jquery function to change nav bar color on scroll
-        $(window).scroll(function () {
-            var scrolling = $(window).scrollTop();
-            if (scrolling > 10) {
-                $("#nav-scroll").css({
-                    "background": "#343a40",
-                    "transition": ".3s ease-in-out",
-                    "-moz-transition": ".3s ease-in-out",
-                    "-webkit-transition": "0.3s ease-in-out",
-                    "-o-transition": "0.3s ease-in-out"
-                });
-                $(".nav-link").css("color", "#fff");
-
-                $(".navbar-toggler").css("background", "#fff");
-            } else {
-                $("#nav-scroll").css("background", "#fff");
-                $(".nav-link").css("color", "rgba(0,0,0,.5)");
-            }
-        });
-
-        //Scroll to top button from tutorial https://youtu.be/TjZw8VXCuOg
-        $("#scroll-to-top").on("click", function () {
-            window.scrollTo(0, 0);
-        });
-
-        //Scroll to top only appears when windo is scrolled 20px
-        $(window).on("scroll", function () {
-            if ($(this).scrollTop() > 40) {
-                $("#scroll-to-top").fadeIn();
-            } else {
-                $("#scroll-to-top").fadeOut();
-            }
-        });
-
-        //Jquery for Read More Read Less paragraph 1
-        $("#show-btn").on("click", function () {
-            if ($("#dots").css("display") === "none") {
-                $("#dots").css("display", "inline");
-                $(this).text("Read More");
-                $("#more").css("display", "none");
-            } else {
-                $("#dots").css("display", "none");
-                $(this).text("Read Less");
-                $("#more").css("display", "inline");
-            }
-        });
-
-        //Jquery for Read More Read Less paragraph 2
-        $("#show-btn-2").on("click", function () {
-            if ($("#dots-2").css("display") === "none") {
-                $("#dots-2").css("display", "inline");
-                $(this).text("Read More");
-                $("#more-2").css("display", "none");
-            } else {
-                $("#dots-2").css("display", "none");
-                $(this).text("Read Less");
-                $("#more-2").css("display", "inline");
-            }
-        });
-
-        // Solar savings calculator event listeners added to input field values to call onChange function
-        document.getElementById("irradience").addEventListener("change", onChange);
-        document.getElementById("roof_space").addEventListener("change", onChange);
-        document.getElementById("unit_cost").addEventListener("change", onChange);
-        document.getElementById("orientation").addEventListener("change", onChange);
+    /**
+     * Show and hide list items when icon is clicked and add class to rotate the arrow icon with css
+     * Origional concept from guidence in stackoverflow
+     */
+    $("#rotate").on("click", function () {
+        $("#instruct").slideToggle(1000);
+        if ($("#rotate").hasClass("down")) {
+            $(this).removeClass("down").addClass("up");
+        } else {
+            $(this).removeClass("up").addClass("down");
+        }
     });
+
+    // Jquery funtion to collapse mobile nav on clicking links from stackoverflow
+    $('.navbar-nav>li>a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    // Jquery function to change nav bar color on scroll based on tutorial https://youtu.be/pS8NmrhKH0w
+    $(window).scroll(function () {
+        var scrolling = $(window).scrollTop();
+        if (scrolling > 10) {
+            $("#nav-scroll").css({
+                "background": "#343a40",
+                "transition": ".3s ease-in-out",
+                "-moz-transition": ".3s ease-in-out",
+                "-webkit-transition": "0.3s ease-in-out",
+                "-o-transition": "0.3s ease-in-out"
+            });
+            $(".nav-link").css("color", "#fff");
+
+            $(".navbar-toggler").css("background", "#fff");
+        } else {
+            $("#nav-scroll").css("background", "#fff");
+            $(".nav-link").css("color", "rgba(0,0,0,.5)");
+        }
+    });
+
+    // Scroll to top button from tutorial https://youtu.be/TjZw8VXCuOg
+    $("#scroll-to-top").on("click", function () {
+        window.scrollTo(0, 0);
+    });
+
+    // Scroll to top only appears when window is scrolled 20px
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 50) {
+            $("#scroll-to-top").fadeIn();
+        } else {
+            $("#scroll-to-top").fadeOut();
+        }
+    });
+
+    /**
+     * Jquery for Read More Read Less paragraph 1
+     * Based on tutorial https://www.w3schools.com/howto/howto_js_read_more.asp 
+     * I adapted tutorial to work with Jquery
+     */
+    $("#show-btn").on("click", function () {
+        if ($("#dots").css("display") === "none") {
+            $("#dots").css("display", "inline");
+            $(this).text("Read More");
+            $("#more").css("display", "none");
+        } else {
+            $("#dots").css("display", "none");
+            $(this).text("Read Less");
+            $("#more").css("display", "inline");
+        }
+    });
+
+    /**
+     * Jquery for Read More Read Less paragraph 1
+     * Based on tutorial https://www.w3schools.com/howto/howto_js_read_more.asp 
+     * I adapted tutorial to work with Jquery
+     */
+    $("#show-btn-2").on("click", function () {
+        if ($("#dots-2").css("display") === "none") {
+            $("#dots-2").css("display", "inline");
+            $(this).text("Read More");
+            $("#more-2").css("display", "none");
+        } else {
+            $("#dots-2").css("display", "none");
+            $(this).text("Read Less");
+            $("#more-2").css("display", "inline");
+        }
+    });
+
+    // Solar savings calculator event listeners added to input field values to call onChange function
+    document.getElementById("irradience").addEventListener("change", onChange);
+    document.getElementById("roof_space").addEventListener("change", onChange);
+    document.getElementById("unit_cost").addEventListener("change", onChange);
+    document.getElementById("orientation").addEventListener("change", onChange);
+});

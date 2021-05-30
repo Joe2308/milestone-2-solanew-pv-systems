@@ -196,6 +196,14 @@ h3 {
     text-transform: capitalize;
 }
 
+.title {
+    font-size: 45px;
+}
+
+.services-title {
+    margin-top: 35px;
+}
+
 /* Home page info boxes */
 .info-box {
     margin-top: 55px;
@@ -247,13 +255,6 @@ h2 i,
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-}
-
-/* Services title */
-.services-title h2 {
-    color: #ea5c20;
-    font-size: 50px;
-    margin-top: 55px;
 }
 
 /* Home intro image and text image container */
@@ -398,8 +399,8 @@ textarea {
     margin: auto;
     border: black 1px solid;
     text-align: center;
-    -webkit-box-shadow: 10px 5px 5px #a9a9a9;
-    box-shadow: 10px 5px 5px #a9a9a9;
+    -webkit-box-shadow: 3px 1px 1px #a9a9a9;
+    box-shadow: 3px 1px 1px #a9a9a9;
     background-color: #fff;
     border-radius: 5px;
 }
@@ -611,11 +612,11 @@ footer h3 {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 310px;
+        min-height: 300px;
         margin-top: 80px;
         margin-left: auto;
         margin-right: auto;
-        width: 95%;
+        width: 90%;
         border-radius: 5px;
     }
 

@@ -1,3 +1,8 @@
+/**
+ * Email JS sendMail funciton
+ * @param {*} contactForm 
+ * @returns 
+ */
 function sendMail(contactForm) {
     emailjs.send("service_y4rwptj", "template_7goiqio", {
             "from_name": contactForm.name.value,
@@ -25,15 +30,15 @@ $(document).ready(function () {
         if ($("#fullname").val() == "" || $("#emailaddress").val() == "" || $("#messagesummary").val() == "") {
             return;
         } else {
-            //Show success alert
+            // Show success alert
             $("#form-alert").show("fade");
 
-            //Set 2 second timeout for success alert
+            // Set 2 second timeout for success alert
             setTimeout(function () {
                 $("#form-alert").hide("fade");
             }, 2000);
 
-            //manually close success alert
+            // manually close success alert
             $("#alert-close").click(function () {
                 $("#form-alert").hide("fade");
             });
