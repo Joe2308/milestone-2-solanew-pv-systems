@@ -48,7 +48,11 @@ nav .nav-link.active {
 }
 
 .navbar-light {
-    background-color: #fff;
+    background-color: #585855;
+}
+
+.nav-link {
+    color: #fff !important;
 }
 
 /*--------------------------------------------- Dividers ------------------------------------*/
@@ -120,6 +124,7 @@ nav .nav-link.active {
     font-size: 50px;
     margin-top: 0px;
     text-align: center;
+    text-shadow: 0 1px 0 black;
     text-transform: capitalize;
     -webkit-animation-name: moveToLeft;
     animation-name: moveToLeft;
@@ -133,6 +138,7 @@ nav .nav-link.active {
     border-radius: 25px;
     background: #ea5c20;
     color: #fff;
+    text-shadow: 0 1px 0 black;
     border: none;
     text-transform: capitalize;
     -webkit-animation-name: moveToRight;
@@ -146,6 +152,7 @@ nav .nav-link.active {
     border-radius: 25px;
     background: #ea5c20;
     color: #fff;
+    text-shadow: 0 1px 0 black;
     border: none;
 }
 
@@ -430,6 +437,7 @@ textarea {
     border-radius: 25px;
     background: #ea5c20;
     color: #fff;
+    text-shadow: 0 1px 0 black;
     border: none;
 }
 

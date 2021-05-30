@@ -103,8 +103,8 @@ $(function () {
 
             $(".navbar-toggler").css("background", "#fff");
         } else {
-            $("#nav-scroll").css("background", "#fff");
-            $(".nav-link").css("color", "rgba(0,0,0,.5)");
+            $("#nav-scroll").css("background", "#585855");
+            $(".nav-link").css("color", "#fff");
         }
     });
 
