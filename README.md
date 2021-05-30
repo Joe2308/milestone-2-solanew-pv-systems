@@ -21,11 +21,14 @@ The design will be simple and minimal relying on a blend of white backgrounds wi
 My main themes for user interactivity will be the use of JQuery to show and hide content with read more buttons. The use of drop down accordian info boxes. The use of Email JS for my contact form. And my main interactive element will be the solar savings calculator designed by me and based on real world data that returns accurate figures for every county in Ireland.
 The use of a fixed navigation bar that changes color on scrolling will also add to interactivity.
 
-The following links shows the mockups designed with Balsamique wireframes:
+The following links shows the origional concept mockups designed with Balsamique wireframes:
 * [Home](assets/wireframes/wireframe-home.png)
 * [Services](assets/wireframes/wireframe-services.png)
 * [Solar-Calculator](assets/wireframes/wireframe-savings.png)
 * [Contact](assets/wireframes/wireframe-contact.png)
+
+As my UX ideas evolved I ended up with a slightly different design and features. The final wireframe design can be seen here:
+* [Final Wireframe](assets/wireframes/revised-wireframe.png)
 
 # User Stories:
 1. **As a Home owner I am interested in lowering my utility bills and I would like to know more about solar energy for my home.**
