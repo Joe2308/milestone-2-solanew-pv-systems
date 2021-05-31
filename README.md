@@ -9,8 +9,6 @@ The site layout is to be clean and simple with the use of hero images for each s
 ## [View Live Project](https://joe2308.github.io/milestone-2-solanew-pv-systems/)
 ![SolaNew PV Systems](assets/images/screenshot.png)
 
-https://joe2308.github.io/milestone-2-solanew-pv-systems/
-
 # UX
 
 ## UX Mockups
@@ -160,7 +158,7 @@ Each section links to the most important items to engage users and encourage a c
 ## Surface
 
 ### Colors:
-I have gone form a simple theme of a clean white background for the body with orange color h1 heading And call to action buttons. My lower level headings are black with orange icons and dividers. I choose the color orange and white to convery energy from the sun over a clean landscape.
+I have gone form a simple theme of a clean white background for the body with orange color h1 heading And call to action buttons. My lower level headings are black with orange icons and dividers. I choose the color orange and white to convey energy from the sun over a clean landscape.
 
 ### Fonts:
 - For the headings I have chosen Montserrat in black as it is simple effective and professional.
@@ -182,6 +180,9 @@ All images have been taken from google images. I made sure to check all images w
 1. Use of subtle shadows to lift some elements off the page.
 
 # AVAILABLE FEATURES
+
+### Navbar
+The nav bar is fixed to enhance user experience. All navigation links change color on clicking. I have also added bootstrap scroll spy and the navigation links change color as the user scrolls through each section. I have made use of Jquery to change the color of the Navigation bar on scrolling. I have also used Jquery to add a back to top button that fades in as the user scrolls down and fades out as the user returns to home.
 
 ### Home
 The home page is laid out with a friendly animated hero image. The company name and a call to action slide in from the left and right using keyframes animation. From research the first thing customers want to know about solar panels is how much they can save on energy bills by installing them. The main standout point on the home page for this reason is a call to action button that links to the solar savings calculator. Below the CTA button I have used bootstrap's grid to display two columns on larger devices of an image and a simple explainer paragraph. The first two sentences are displayed and I have use Jquery to target a read more button to show extra text. Below that I have used bootstrap cards to display the professional qualities of the company.
