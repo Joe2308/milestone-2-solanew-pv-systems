@@ -6,6 +6,10 @@ This project is based on a solar panel installation coming based in Ireland. The
 The main aim of this website is to ultimately sell the supply and installation of bespoke designed solar photovoltaic systems to home owners across Ireland. I spent some time researching the annual solar radiation figures for all counties in Ireland and I also researched the efficiency of the leading solar panel brands. I turned this data into a very usefull tool for customers to see what annual savings they can make by installing solar energy. The data is based on accurate figures and gives accurate results that could also be used by other solar panel installation companies. I hope to develop this idea more in depth for an onsite app in future. 
 The site layout is to be clean and simple with the use of hero images for each section and a clearly defined call to action to guide the user through a business funnel and ultimately to a conversion. 
 
+## [View Live Project](https://joe2308.github.io/milestone-2-solanew-pv-systems/)
+![SolaNew PV Systems](assets/images/screenshot.png)
+
+https://joe2308.github.io/milestone-2-solanew-pv-systems/
 
 # UX
 
