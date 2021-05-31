@@ -71,13 +71,15 @@ nav .nav-link.active {
 
 .intro-divider {
     border-top: 3px solid #ea5c20;
-    width: 50%;
+    width: 25%;
     border-radius: 15%;
 }
 
-.info-divider {
+.info-divider,
+.savings-divider,
+.contact-divider {
     border-top: 3px solid #ea5c20;
-    width: 25%;
+    width: 10%;
     border-radius: 15%;
 }
 
@@ -87,19 +89,7 @@ nav .nav-link.active {
     border-radius: 15%;
 }
 
-.savings-divider {
-    border-top: 3px solid #ea5c20;
-    width: 25%;
-    border-radius: 15%;
-}
-
 .form hr {
-    border-top: 3px solid #ea5c20;
-    width: 25%;
-    border-radius: 15%;
-}
-
-.contact-divider {
     border-top: 3px solid #ea5c20;
     width: 25%;
     border-radius: 15%;
@@ -635,6 +625,12 @@ footer h3 {
 
     #rotate {
         display: block !important;
+    }
+
+    .info-divider,
+    .savings-divider,
+    .contact-divider {
+        width: 25%;
     }
 }
 
