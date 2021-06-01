@@ -287,3 +287,44 @@ On entering the website I am presented with an eye catching image and a button b
 
 1. **As a quantity surveyor** I am given the task of pricing for solar panels on a large social housing scheme. SolaNew PV System's website caught my eye. The solar energy calculator is a great touch that allowed me to get direct information on savings for my project with the need of a science degree! I was able to include this data in a monthly pricing and progress report for my employer. My employer gave the green light to offer the installation project to SolaNew PV systems.
 
+## Manual Testing:
+
+#### Scroll to top button: 
+I made sure to check that this was working correctly on all devices. I origionally had a problem where the button was travelling behind images, to correct this I used z-index in css. I also had an issue where you could see the button on window load for a split second before it was hidden. I figured out the reason for this was I ass using a jquery css selector to hide the icon and my Jquery was loading last. To solve the issue I just set the icon to display none in my style.css. I could also have moved my Jquery script to be called in the head of the page but I did not want to effect the page load speed.
+
+#### Navbar background change color on scroll: 
+I made sure to test this on all screen sizes and I noticed I was having some issues but quickly found that I needed to override my bootstrap default css for all of my Jquery to work correctly.
+
+#### Responsive design:
+* I carried out exstensive user testing and consistently checked links and screen sizes on all available devices in Chrome dev tools.
+* The desktop design utilizes two and three columns in some sections, where responsive devices use one single column. I used bootstrap's grid system to achieve this.
+* I changed one image for smaller screen sizes up to 540px as I felt it was a better fit.
+* I applied appropriate media queries for all screen sizes to ensure all of my images looked consistent across all devices.
+
+#### Call to action buttons:
+* I checked and rechecked all buttons were working on all devices and were leading to the correct sections of the website. It was also important that I laid out 
+my CTA choices in order of priorty to my user stories with a button to find the solar calculator and a button for the contact form being the most important.
+
+#### Contact form:
+I kept my contact form simple with a background color that complemented the theme, this also meant it translated well on all device types. I also used EmailJS to send my form as learned in Code Institute's Javascript modules. A final feature I added was the use of a bootstrap success alert to display only when the required fields were sent. I used an if else statement with JQuery to achieve this based on whether each field was empty or not. I also added an automatic timeout for the success alert.
+
+#### External links:
+I made sure to check that all links and social media links were directed to the correct URLS and also that my target="_blank" attribute was working. 
+All external links open in a new browser tab.
+
+#### Read More Read Less Buttons: 
+I used Jquery to show and hide text with Read More Read Less buttons by adding an event listener. Based on which element was showing I used an if else statement to change the css propertys of the button and the inner HTML. I used the dev tools console to make sure no errors were present and I manually checked the operation of the buttons. Origionally I had used the same class to target each read more section but found that I needed to use seperate classes so each section would behave independantly.
+
+#### Solar Calculator Instructions: 
+I used Jquery to show and hide list item intructions on how to use the solar calculator. I used Jquery to add an event listener to run a function containing an if else statement that added and removed classes based on which class was present. I then used css to rotate the arrow 180 degrees and show and hide the list items. This particular task took some research as I origionally tried using Jquery to change background images off directional arrows but eventually settled on using css to rotate a font awesome icon. 
+
+#### Solar Calculator
+The solar calculator was the origional concept for this project and I began working on that well in advance in a seperate gitpod workstation to make sure I could make it work. It can be seen from my [github repo](https://github.com/Joe2308/solar-calculator-practise) The basic design was based on a youtube tutorial for monthly loan repayments. I used the console and jshint.com to make sure there were no issues with my Javascript. It took some figuring out on paper. 
+![Calculator origional concept](assets/images/concept.jpg) 
+I made sure to check the console in dev tools during the coding process to make sure there were no errors. I also ran my code through jshint.com. 
+
+
+
+
+
+
