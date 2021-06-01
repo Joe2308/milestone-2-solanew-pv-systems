@@ -193,6 +193,8 @@ The services page contains a call to action button that links to the contact for
 ### Solar Savings Calculator
 The introduction to the savings calculator is instruction steps on how to use it effectively. I have used a Jquery accordian to allow the steps to drop down after clicking on the arrow.
 The calculator itself has been written in vanilla Javascript. It is based on real world data. I researched the annual sunshine hours generated per county in Ireland per square meter. I based calculations on solar panels that are 19% efficient at peak power. When the user selects a county an onChange funciton is triggered that multiplies the irradience value of the selected county by the efficiency of the panel. The user then selects an average area of free roof space and this input value is multiplied by our irradience times efficiency result. The result of this is then multiplied by the cost the user inputs that they currently pay per unit of electricity. The savings result is then display in the inner HTML of a h2 heading. There is also the option to select different roof orientations. If the user does so an if else state also for a lower effieciency to be used to allow for losses. An additional if else statement is used for user error. If the user does not select a county and proceeds to input the other form fields an message is displayed, "Please choose county".
+The values for the calculator were taken from this irradience data for Ireland:
+![Solar hours Ireland](assets/images/optimizilla.png)
 
 ### Contact US 
 At this point the user should be fully satisfied they have been fully informed in a transparent way about the workings of solar panels and how they are certainly a great investment. This is why the contact form has been left quite simple to entice a conversion. Once the user has come this far the sales team will complete the funnel. The emails are being send by email.Js.
@@ -271,4 +273,17 @@ There are some features that I would love to implement on future releases:
 17. [CSS Autoprefixer](https://autoprefixer.github.io/)
 * I used Autoprefixer to ensure all of my css styles would work on all browsers.
 
+# TESTING STEPS
+
+## User story testing:
+
+1. **As a home owner** I have found the cost of my electricity has begun to rise. On performing a google search I am presented with the welcoming and informative SolaNew PV Systems.
+I find technology and electriconics intimidating and I Just want to know if solar panels will be a good investment. 
+On entering the website I am presented with an eye catching image and a button below that says try our solar savings calculator. The calculator is easy to use and it tells me exactly how much I can save. This has encourage me to get in touch through the companies contact form and begin my renewable energy journey.
+
+1. **As a business owner** I am interested in lowering my overheads as well as lower my carbon footprint. I find the website is very easy to navigate and the information is very informative and jargon free. The use of text hidden with read more buttons allowed me not be overwhelmed with information on my first visit. The navigation menu followed me to each section and it was very easy to find the information that I needed. The addition of a google maps location allowed me to visit the showroom directly for a full demo.
+
+1. **As a new company** I want to market to our client and employees that we are a modern company playing our part in the environment. We are interested in installing electric car chargers for our employees and would like these chargers to powered by solar energy. The webiste offered me information and I was swiftly guided along through each section feeling I knew a bit more about solar energy. I was compelled to fill out the contact form where I was presented with a success message. A member of the sales team was very quick to reply and take my order.
+
+1. **As a quantity surveyor** I am given the task of pricing for solar panels on a large social housing scheme. SolaNew PV System's website caught my eye. The solar energy calculator is a great touch that allowed me to get direct information on savings for my project with the need of a science degree! I was able to include this data in a monthly pricing and progress report for my employer. My employer gave the green light to offer the installation project to SolaNew PV systems.
 
