@@ -167,6 +167,8 @@ I have gone form a simple theme of a clean white background for the body with or
 Deciding to invest in solar panels can be a daunting experience for home owners. Add to this the fact there are many similar companies offering the best service. To stand out I decided to add some fun to the website by using cartoon style images. They are very welcoming to visitors and still convey exactly what the company is all about. Professional friendly service with outstanding customer support.
 All images have been taken from google images. I made sure to check all images were free to use and share so there would be no copyright infringments. To this I search for google images clicked on settings >> advanced search and made sure the setting for usage rights was enabled.
 
+![Google images advanced search](assets/images/copyright.png)
+
 ### Order and sequence:
 1. Navigation order - Home/ Services/ Solar Savings Calculator/ Contact US.
 1. Home section order - Hero image/ Heading/ Call to action/ Intro paragraph and image/ How it works bootstrap cards.
@@ -352,6 +354,41 @@ It did show up some errors on color contrasting on my call to action buttons and
 
 ![Color contrast validator fail](assets/images/contrast-fail.png)
 ![Color contrast validator pass](assets/images/contrast-pass.png)
+
+# DEPLOYMENT AND TESTING 
+This site is hosted using GitHub pages, and is deployed from the master branch in repository settings.
+
+To create a local copy of this repository it can be cloned to GitHub desktop in the following steps:
+1. On GitHub, navigate to the main page of the repository [https://github.com/Joe2308/milestone-2-solanew-pv-systems].
+2. Above the list of files, click  Code. ![Cloning steps](assets/images/clone1.png)
+3. Click  Open with GitHub Desktop to clone and open the repository with GitHub Desktop. ![Cloning steps](assets/images/clone2.png)
+4. Follow the prompts in GitHub Desktop to complete the clone.
+
+#### Please follow this link for more information on cloning GitHub repositories [https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop]
+
+## Deployment steps:
+
+1. From my GitHub repository I selected the Settings tab.
+
+![Deployment steps](assets/images/deploy-1.png)
+
+2. From here I scrolled down the page to find the GitHub Pages section and selected the Master branch and pressed save.
+
+![Git pages new look](assets/images/new-pages.png)
+
+![Deployment steps](assets/images/deploy-2.png)
+
+3. From here I was given the message that my site had been deployed at the following url [ https://joe2308.github.io/milestone-2-solanew-pv-systems/].
+
+![Deployment steps](assets/images/deploy-3.png)
+
+4. I followed the link and visually inspected the published site to ensure it looked the same as in my code editor preview.
+
+5. I then use Chrome Devtools to inspect the site and manually test all links and responsiveness on all available devices. I also check all my interactive features to make sure there were no errors in the console.
+
+![Deployment Steps](assets/images/deploy-4.png)
+
+
 
 
 
