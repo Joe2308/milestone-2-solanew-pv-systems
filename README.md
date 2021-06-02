@@ -323,6 +323,23 @@ The solar calculator was the origional concept for this project and I began work
 ![Calculator origional concept](assets/images/concept.jpg) 
 I made sure to check the console in dev tools during the coding process to make sure there were no errors. I also ran my code through jshint.com. 
 
+## HTML and CSS validation and fixes:
+1. I used [W3C CSS validation service](https://jigsaw.w3.org/css-validator/) to test and check my CSS code. I luckily had no issues to find and fix. 
+
+![W3C CSS test](assets/images/css-validate.png)
+
+2. I used [W3C HTML validation service](https://validator.w3.org/) to test and check my HTML code. There were some errors. I had an error that type and text tages were not necessary when adding script links. I removed these and retested. I had an error for an empty h3 tag. I did not fix this as I am using Javascript to populated this heading with an onChange event.
+
+![W3C HTML test](assets/images/html-validate-error.png)
+
+3. I used [JS Hint validation service](https://jshint.com/) to test all of my Javascript files. I had one warning in my main.js file saying that the const is availble in version ES6. To remedy this I placed a comment /*jshint esversion: 6 */ at the top of the file and restested. I passed with no major issues. 
+
+![JS Hint test with warning](assets/images/js-hint-warning.png)
+![JS Hint test main.js](assets/images/js-hint-main.png)
+![JS Hint test maps.js](assets/images/js-hint-maps.png)
+![JS Hint test send-email.js](assets/images/js-hint-email.png)
+
+
 
 
 
