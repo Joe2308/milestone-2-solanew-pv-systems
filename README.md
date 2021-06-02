@@ -339,6 +339,20 @@ I made sure to check the console in dev tools during the coding process to make 
 ![JS Hint test maps.js](assets/images/js-hint-maps.png)
 ![JS Hint test send-email.js](assets/images/js-hint-email.png)
 
+#### Lighthouse performance test:
+4. I used Lighthouse in Chrome devtools to test my website's performance. I was able to dramatically increase load times by optimizing images.
+I increased my SEO scores by adding meta content for seo description.
+I also increased my best practises score by adding rel="noreferrer" to all external links.
+
+![W3C HTML test](assets/images/lighthouse.png)
+
+#### Color contrast:
+5. I tested my webiste in [Color contrast accessibility validator](https://color.a11y.com/)
+It did show up some errors on color contrasting on my call to action buttons and some links. I choose some other colors but felt it comprised my vision for the website and did not match the style. A lighthouse performance test return an accessibility score in the high 90s so I was satisfied that google would not penalize me on my color choices.
+
+![Color contrast validator fail](assets/images/contrast-fail.png)
+![Color contrast validator pass](assets/images/contrast-pass.png)
+
 
 
 
