@@ -19,7 +19,7 @@ The site layout is to be clean and simple with the use of hero images for each s
 ## [CREDITS](#code-credits)
 ## [DEPLOYMENT](#deployment-and-testing)
 ## [ACKNOWLEDGEMENTS](#my-acknowledgements)
-## [DISCLAIMER](#disclaimer)
+## [DISCLAIMER](#my-disclaimer)
 
 # UX
 
@@ -431,7 +431,7 @@ To create a local copy of this repository it can be cloned to GitHub desktop in 
 1. I would like to acknowledge my mentor [Guido Cecilio](https://code-institute-room.slack.com/team/U4ALPK7UG) for his help with keeping the design consistent and also to write maintainable Javascript functions. Also for his suggestion to add a bootstrap alert with a timeout and any issues I had along the way.
 1. I would like to acknowledge [Natasha Clerkin](https://github.com/natashaclerkin/singularartistsMS1) for inspiration from her fantastic README.md file. 
 
-# Disclaimer 
+# My Disclaimer 
 * This project is for edcational purposes only.
 
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
