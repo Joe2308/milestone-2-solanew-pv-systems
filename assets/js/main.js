@@ -64,6 +64,25 @@ function showAnswer() {
 }
 
 /**
+ * Jquery for Read More Read Less paragraph 1
+ * Based on tutorial https://www.w3schools.com/howto/howto_js_read_more.asp 
+ * I adapted tutorial to work with Jquery
+ */
+function setupReadMoreButton(buttonElement, expandibleElement, truncatedElement) {
+    buttonElement.on("click", function () {
+        if (truncatedElement.css("display") === "none") {
+            truncatedElement.css("display", "inline");
+            $(this).text("Read More");
+            expandibleElement.css("display", "none");
+        } else {
+            truncatedElement.css("display", "none");
+            $(this).text("Read Less");
+            expandibleElement.css("display", "inline");
+        }
+    });
+}
+
+/**
  * Jquery funcitons on document load
  */
 $(function () {
@@ -123,39 +142,8 @@ $(function () {
         }
     });
 
-    /**
-     * Jquery for Read More Read Less paragraph 1
-     * Based on tutorial https://www.w3schools.com/howto/howto_js_read_more.asp 
-     * I adapted tutorial to work with Jquery
-     */
-    $("#show-btn").on("click", function () {
-        if ($("#dots").css("display") === "none") {
-            $("#dots").css("display", "inline");
-            $(this).text("Read More");
-            $("#more").css("display", "none");
-        } else {
-            $("#dots").css("display", "none");
-            $(this).text("Read Less");
-            $("#more").css("display", "inline");
-        }
-    });
-
-    /**
-     * Jquery for Read More Read Less paragraph 1
-     * Based on tutorial https://www.w3schools.com/howto/howto_js_read_more.asp 
-     * I adapted tutorial to work with Jquery
-     */
-    $("#show-btn-2").on("click", function () {
-        if ($("#dots-2").css("display") === "none") {
-            $("#dots-2").css("display", "inline");
-            $(this).text("Read More");
-            $("#more-2").css("display", "none");
-        } else {
-            $("#dots-2").css("display", "none");
-            $(this).text("Read Less");
-            $("#more-2").css("display", "inline");
-        }
-    });
+    setupReadMoreButton($("#show-btn"), $("#more"), $("#dots"));
+    setupReadMoreButton($("#show-btn-2"), $("#more-2"), $("#dots-2"));
 
     // Solar savings calculator event listeners added to input field values to call onChange function
     document.getElementById("irradience").addEventListener("change", onChange);
