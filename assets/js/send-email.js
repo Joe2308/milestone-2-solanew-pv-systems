@@ -11,37 +11,47 @@ function sendMail(contactForm) {
         })
         .then(function (response) {
                 console.log("SUCCESS", response);
+                showAlert(false, 4);
             },
             function (error) {
                 console.error("FAILED", error);
+                showAlert(true, 4);
             });
 
     return false;
 }
 
 /**
- * Bootstrap success alert only show when required fields are filled.
- * Based on youtube tutorial https://youtu.be/UTZjhCH80Zg
- * I added an if else state myself to ensure alert only displayed after required fields had input.
+ * Shows alert with successful or error message based on the error parameter. 
+ * The alert fades after the time specified in the delay parameter expires.
+ * 
+ * @param {Boolean} error To especify the type of alert message. True is an 
+ *                        error message and false is a successful message.
+ * @param {Number} delay The time the alert remains visible before fading.
  */
-$(document).ready(function () {
-    $("#btn-submit").click(function () {
+function showAlert(error, delay) {
+    // Show success alert
+    const alertElement = $("#form-alert");
+    if (error) {
+        alertElement.find("#alertMessage").append("Something went wrong! Try again later.");
+    } else {
+        alertElement.find("#alertMessage").append("<strong>Success!</strong> Your message has been sent.");
+    }
 
-        if ($("#fullname").val() == "" || $("#emailaddress").val() == "" || $("#messagesummary").val() == "") {
-            return;
-        } else {
-            // Show success alert
-            $("#form-alert").show("fade");
+    alertElement.toggleClass('alert-error', error)
+    alertElement.toggleClass('alert-success', !error);
+    
+    alertElement.show("fade");
 
-            // Set 2 second timeout for success alert
-            setTimeout(function () {
-                $("#form-alert").hide("fade");
-            }, 2000);
+    // Set 2 second timeout for success alert
+    setTimeout(function () {
+        alertElement.hide("fade");
+    }, delay * 1000);
+}
 
-            // manually close success alert
-            $("#alert-close").click(function () {
-                $("#form-alert").hide("fade");
-            });
-        }
+$(document).ready(() => {
+    // manually close success alert
+    $("#alert-close").click(function () {
+        $("#form-alert").hide("fade");
     });
 });
