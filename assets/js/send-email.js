@@ -38,7 +38,7 @@ function showAlert(error, delay) {
         alertElement.find("#alertMessage").append("<strong>Success!</strong> Your message has been sent.");
     }
 
-    alertElement.toggleClass('alert-error', error)
+    alertElement.toggleClass('alert-error', error);
     alertElement.toggleClass('alert-success', !error);
     
     alertElement.show("fade");
@@ -49,7 +49,7 @@ function showAlert(error, delay) {
     }, delay * 1000);
 }
 
-$(document).ready(() => {
+$(document).ready(function () {
     // manually close success alert
     $("#alert-close").click(function () {
         $("#form-alert").hide("fade");
