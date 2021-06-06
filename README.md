@@ -6,7 +6,7 @@ This project is based on a solar panel installation company based in Ireland. Th
 
 The main aim of this website is to ultimately sell the supply and installation of bespoke designed solar photovoltaic systems to home owners across Ireland. I spent some time researching the annual solar radiation figures for all counties in Ireland and I also researched the efficiency of the leading solar panel brands. I turned this data into a very usefull tool for customers to see what annual savings they can make by installing solar energy. The data is based on accurate figures and gives accurate results that could also be used by other solar panel installation companies. I hope to develop this idea more in depth for an onsite app in future. 
 
-The site layout is to be clean and simple with the use of hero images for each section, two column layout where appropriate, bootstrap cards and a clearly defined call to action to guide the user through a business funnel and ultimately to a conversion. For my user interactivity I have use simple Jquery funcitons such as changing the navbar color onscroll, adding a scroll to top button onscroll, showing and hiding content with event listeners, using the google maps API, send emails with email JS and my main interactive item is the solar savings calculator written in vanilla Javascript.
+The site layout is to be clean and simple with the use of hero images for each section, two column layout where appropriate, bootstrap cards and a clearly defined call to action to guide the user through a business funnel and ultimately to a conversion. For my user interactivity I have used simple Jquery functions such as changing the navbar color on scroll, adding a scroll to top button on scroll, showing and hiding content with event listeners, using the google maps API, sending emails with email JS and my main interactive item is the solar savings calculator written in vanilla Javascript.
 
 ## [View Live Project](https://joe2308.github.io/milestone-2-solanew-pv-systems/)
 ![SolaNew PV Systems](assets/images/screenshot.png)
@@ -30,12 +30,12 @@ The website is made up of 4 clearly defined sections:
 3. Solar Savings Calculator section
 4. Contact Form section
 
-The design will be simple and minimal relying on a blend of white backgrounds with black text and also a blend of orange and red icons and dividers to convey a solar theme. The use of emotive hero images of renewable energy will tie all the sections together. My main theme is an animation cartoon style which is fun yet educational and I feel the mix of fun and interactivity will show higher session times and lower bounce rates, which should lend to a boost in search results rankings and ultimately beating competitors to page 1.
+The design will be simple and minimal relying on a blend of white backgrounds with black text and also a blend of orange and red icons and dividers to convey a solar theme. The use of emotive hero images of renewable energy will tie all the sections together. My main theme is an animation cartoon style which is fun yet educational and I feel the mix of fun and interactivity will show higher session times and lower bounce rates, which should lend to a boost in search result rankings and ultimately beating competitors to page 1.
 
-My main themes for user interactivity will be the use of JQuery to show and hide content with read more buttons. The use of drop down text when clicking arrows. The use of Email JS for my contact form. And my main interactive element will be the solar savings calculator designed by me and based on real world data that returns accurate figures for every county in Ireland.
+My main themes for user interactivity will be the use of JQuery to show and hide content with read more/read less buttons. The use of drop down text when clicking arrows. The use of Email JS for my contact form. The use of google maps API to show the companies office location. And my main interactive element will be the solar savings calculator designed by me and based on real world data that returns accurate figures for every county in Ireland.
 The use of a fixed navigation bar that changes color on scrolling will also add to interactivity.
 
-The following links shows the origional concept mockups designed with Balsamique wireframes:
+The following links show the origional concept mockups designed with Balsamique wireframes:
 * [Home](assets/wireframes/wireframe-home.png)
 * [Services](assets/wireframes/wireframe-services.png)
 * [Solar-Calculator](assets/wireframes/wireframe-savings.png)
@@ -99,7 +99,7 @@ The content is laid out to allow for the least possible steps to a conversion bo
 Users will most certainly be interested in how much they can save on their energy bills. They will begin by using the solar savings calculator first. From here they will enquire about pricing for a custom system for their premises.
 
 ### How do I initiate an impulse buy/booking?
-Feel good content with CTA flow to lead to completing the contact and follow the company on social media.
+Feel good content with CTA flow to lead to completing the contact form and follow the company on social media.
 
 ## Scope:
 
@@ -170,7 +170,7 @@ Each section links to the most important items to engage users and encourage a c
 ## Surface
 
 ### Colors:
-I have gone for a simple theme of a clean white background for the body with orange color h1 heading And call to action buttons. My lower level headings are black with orange icons and dividers. I choose the color orange and white to convey energy from the sun over a clean landscape.
+I have gone for a simple theme of a clean white background for the body with orange color h1 heading and call to action buttons. My lower level headings are black with orange icons and dividers. I choose the color orange and white to convey energy from the sun over a clean landscape.
 
 ### Fonts:
 - For the headings I have chosen Montserrat in black as it is simple effective and professional.
@@ -208,13 +208,13 @@ The services page contains a call to action button that links to the contact for
 The introduction to the savings calculator is instructional steps on how to use it effectively. I have used Jquery to allow the steps to drop down after clicking on the arrow.
 The calculator itself has been written in vanilla Javascript. It is based on real world data. I researched the annual sunshine hours generated per county in Ireland per square meter. 
 
-I based calculations on solar panels that are 19% efficient at peak power. When the user selects a county an onChange funciton is triggered that multiplies the irradience value of the selected county by the efficiency of the panel. The user then selects an average area of free roof space and this input value is multiplied by our irradience times efficiency result. The result of this is then multiplied by the cost the user inputs that they currently pay per unit of electricity. The savings result is then display in the inner HTML of a h2 heading. There is also the option to select different roof orientations. If the user does so an if else statement allows for a lower effieciency to be used to allow for losses. An additional if else statement is used for user error. If the user does not select a county and proceeds to input the other form fields a message is displayed, "Please choose county".
+I based calculations on solar panels that are 19% efficient at peak power. When the user selects a county an onChange function is triggered that multiplies the irradience value of the selected county by the efficiency of the panel. The user then selects an average area of free roof space and this input value is multiplied by our irradience times efficiency result. The result of this is then multiplied by the cost the user inputs that they currently pay per unit of electricity. The savings result is then displayed in the inner HTML of a h2 heading. There is also the option to select different roof orientations. If the user does so an if else statement allows for a lower effieciency to be used to allow for losses. An additional if else statement is used for user error. If the user does not select a county and proceeds to input the other form fields a message is displayed, "Please choose county".
 
 The values for the calculator were taken from this irradience data for Ireland:
 ![Solar hours Ireland](assets/images/solar-map.jpg)
 
 ### Contact US 
-At this point the user should be fully satisfied they have been fully informed in a transparent way about the workings of solar panels and how they are certainly a great investment. This is why the contact form has been left quite simple to entice a conversion. Once the user has come this far the sales team will complete the funnel. The emails are being send by email.Js.
+At this point the user should be fully satisfied they have been fully informed in a transparent way about the workings of solar panels and how they are certainly a great investment. This is why the contact form has been left quite simple to entice a conversion. Once the user has come this far the sales team will complete the funnel. The emails are being send by Email Js.
  
 
 ### Footer
@@ -235,59 +235,59 @@ There are some features that I would love to implement on future releases:
 * I found Balsamiq an extremely usefull platform to design mock ups and get a feel of how my website would look before coding.
 
 2. [HTML 5](https://en.wikipedia.org/wiki/HTML)
-* HTML is the main mark up language used to design my webiste.
+* HTML is the main mark up language used to design my website.
 
 3. [CSS 3](https://en.wikipedia.org/wiki/CSS)
 * All HTML elements were styled to my own personal taste using CSS language.
 
-1. [Javascript](https://www.javascript.com/)
+4. [Javascript](https://www.javascript.com/)
 * The solar savings calculator was designed used vanilla Javascript.
 
-1. [Jquery](https://jquery.com/)
+5. [Jquery](https://jquery.com/)
 * Jquery was used to show and hide elements on the document.
 
-1. [EmailJS](https://www.emailjs.com/)
+6. [EmailJS](https://www.emailjs.com/)
 * EmailJS was used to send my contact form.
 
-4. [Bootstrap 4](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+7. [Bootstrap 4](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 * In order to make my website responsive I used the bootstrap 4 grid system. I also used bootstrap for the responsive image cards.
 
-5. [Font Awesome](https://fontawesome.com/)
+8. [Font Awesome](https://fontawesome.com/)
 * All icons have been sourced and added from the free version of font awesome.
 
-6. [Google Fonts](https://fonts.google.com/)
+9. [Google Fonts](https://fonts.google.com/)
 * I used google fonts to source Monserrat to style all of my headings and text.
 
-7. [Gitpod](https://www.gitpod.io/)
+10. [Gitpod](https://www.gitpod.io/)
 * I used git pod as my IDE workspace to write and run all code. I used Git as my version control to commit and push all code to my GitHub repository.
 
-8. [Github](https://github.com/)
+11. [Github](https://github.com/)
 * I used GitHub to store my Git commits and back up all code.
 
-9. [W3C HTML validator](https://validator.w3.org/)
+12. [W3C HTML validator](https://validator.w3.org/)
 * I used the W3C validation service to ensure all HTML code passed validation.
 
-10. [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
+13. [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
 * I used the W3C validation service to ensure all CSS code passed validation.
 
-11. [Photoshop](https://www.adobe.com/ie/products/photoshop.html)
+14. [Photoshop](https://www.adobe.com/ie/products/photoshop.html)
 * I used Adobe photoshop to create the company logo and favicon.
 
-13. [Optimizilla](https://imagecompressor.com/)
+15. [Optimizilla](https://imagecompressor.com/)
 * When testing load speeds in Lighthouse some of my images needed to be optimized. Optimizilla allowed me to compress images up to 80% dramatically improving the website's performance in Lighthouse.
 ![Image compression](assets/images/optimizilla.png)
 
 
-14. [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+16. [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 * Throughout the development process I used chrome developer tools for debugging and also to keep checking any changes I was making looked good on all devices.
 
-15. [WAVE web accessibility tool](https://wave.webaim.org/)
+17. [WAVE web accessibility tool](https://wave.webaim.org/)
 * I used WAVE to make check any errors that my site may have which would effect users with hearing or visual disabilities.
 
-16. [a11y](https://color.a11y.com/)
+18. [a11y](https://color.a11y.com/)
 * I used a11y to get my color contrast between background and text as accessible as possible without comprimising my vision for the website design.
 
-17. [CSS Autoprefixer](https://autoprefixer.github.io/)
+19. [CSS Autoprefixer](https://autoprefixer.github.io/)
 * I used Autoprefixer to ensure all of my css styles would work on all browsers.
 
 # TESTING STEPS
@@ -296,11 +296,11 @@ There are some features that I would love to implement on future releases:
 
 1. **As a home owner** I have found the cost of my electricity has begun to rise. On performing a google search I am presented with the welcoming and informative SolaNew PV Systems.
 I find technology and electronics intimidating and I Just want to know if solar panels will be a good investment. 
-On entering the website I am presented with an eye catching image and a button below that says try our solar savings calculator. The calculator is easy to use and it tells me exactly how much I can save. This has encouraged me to get in touch through the company's contact form and begin my renewable energy journey.
+On entering the website I am presented with an eye catching image and a button below that says "try our solar savings calculator". The calculator is easy to use and it tells me exactly how much I can save. This has encouraged me to get in touch through the company's contact form and begin my renewable energy journey.
 
 1. **As a business owner** I am interested in lowering my overheads as well as lower my carbon footprint. I find the website is very easy to navigate and the information is very informative and jargon free. The use of text hidden with read more buttons allowed me not be overwhelmed with information on my first visit. The navigation menu followed me to each section and it was very easy to find the information that I needed. The addition of a google maps location allowed me to visit the showroom directly for a full demo.
 
-1. **As a new company** I want to market to our client and employees that we are a modern company playing our part in the environment. We are interested in installing electric car chargers for our employees and would like these chargers to powered by solar energy. The website offered me great information and I was swiftly guided along through each section feeling I knew a bit more about solar energy. I was compelled to fill out the contact form where I was presented with a success message. A member of the sales team was very quick to reply and take my order.
+1. **As a new company** I want to market to our clients and employees that we are a modern company playing our part in the environment. We are interested in installing electric car chargers for our employees and would like these chargers to powered by solar energy. The website offered me great information and I was swiftly guided along through each section feeling I knew a bit more about solar energy. I was compelled to fill out the contact form where I was presented with a success message. A member of the sales team was very quick to reply and take my order.
 
 1. **As a quantity surveyor** I am given the task of pricing for solar panels on a large social housing scheme. SolaNew PV System's website caught my eye. The solar energy calculator is a great touch that allowed me to get direct information on savings for my project without the need of a science degree! I was able to include this data in a monthly pricing and progress report for my employer. My employer gave the green light to offer the installation project to SolaNew PV systems.
 
@@ -400,7 +400,7 @@ To create a local copy of this repository it can be cloned to GitHub desktop in 
 
 4. I followed the link and visually inspected the published site to ensure it looked the same as in my code editor preview. I found a 404 error in the console that some images were not loading. I checked all file paths which rectified the issue.
 
-5. I then used Chrome Devtools to inspect the site and manually test all links and responsiveness on all available devices. I also check all my interactive features to make sure there were no errors in the console.
+5. I then used Chrome Devtools to inspect the site and manually test all links and responsiveness on all available devices. I also checked all my interactive features to make sure there were no errors in the console.
 
 ![Deployment Steps](assets/images/deploy-4.png)
 
