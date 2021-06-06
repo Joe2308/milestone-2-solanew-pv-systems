@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /**
  * Email JS sendMail funciton
  * @param {*} contactForm 
@@ -22,12 +24,12 @@ function sendMail(contactForm) {
 }
 
 /**
- * Shows alert with successful or error message based on the error parameter. 
+ * Shows alert with success or error message based on the error parameter. 
  * The alert fades after the time specified in the delay parameter expires.
  * 
- * @param {Boolean} error To especify the type of alert message. True is an 
- *                        error message and false is a successful message.
- * @param {Number} delay The time the alert remains visible before fading.
+ * @param {Boolean} error to specify the type of alert message. True is an 
+ *                        error message and false is a success message.
+ * @param {Number} delay the time the alert remains visible before fading.
  */
 function showAlert(error, delay) {
     // Show success alert
@@ -40,7 +42,7 @@ function showAlert(error, delay) {
 
     alertElement.toggleClass('alert-error', error);
     alertElement.toggleClass('alert-success', !error);
-    
+
     alertElement.show("fade");
 
     // Set 2 second timeout for success alert

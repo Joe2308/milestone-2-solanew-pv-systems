@@ -2,7 +2,7 @@
 /**
  * Solar calculator function event handler to execute input field values
  * Origional concept from tutorial https://youtu.be/vkBiEuZSq9s expaned to suit my needs
- * Credit to my mentor for help in tidying my functions
+ * Credit to my mentor for help in tidying and refactoring my functions
  */
 function onChange() {
     var irradience = document.getElementById("irradience").value;
@@ -83,7 +83,7 @@ function setupReadMoreButton(buttonElement, expandibleElement, truncatedElement)
 }
 
 /**
- * Jquery funcitons on document load
+ * Jquery functions on document load
  */
 $(function () {
     // Hide steps list items for solar calculator on document loaded
